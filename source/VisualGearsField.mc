@@ -44,7 +44,7 @@ class VisualGearsField extends WatchUi.DataField {
 function drawGearInfo(dc) {
     // Constants for display settings
     var DEBUG = false;                   // Set debug information to false
-    var RECT_HEIGHT = 20;                // Height of gear rectangles
+    var RECT_HEIGHT = 30;                // Height of gear rectangles
     var RECT_SPACING = 4;                // Spacing between rectangles
     var RECT_BORDER = 2;                 // Border thickness
     var TEXT_HEIGHT = 15;                // Height for debug text
@@ -60,6 +60,8 @@ function drawGearInfo(dc) {
             deviceOffset = 6;  // Edge 1050 needs +6 offset
         } else if (deviceType.find("540") != null) {
             deviceOffset = 3;  // Edge 540 needs +3 offset
+        } else {
+            deviceOffset = 6;
         }
         // Add more device-specific offsets as needed
     }
@@ -154,7 +156,7 @@ function drawGearInfo(dc) {
     var frontTotalWidth = (frontGearMax * frontRectWidth) + ((frontGearMax - 1) * RECT_SPACING);
     
     // Calculate starting X to center the front gear row with device-specific offset
-    var frontStartX = width - MARGIN - frontTotalWidth + deviceOffset;
+    var frontStartX = width - MARGIN - frontTotalWidth - deviceOffset;
     
     // Draw front gear rectangles
     for (var i = 0; i < frontGearMax; i++) {
