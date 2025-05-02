@@ -68,109 +68,120 @@
         <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="48" parent="globals/VisualGearsField" pc="268436416" symbol="drawGearInfo"/>
         <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="49" parent="globals/VisualGearsField" pc="268436420" symbol="drawGearInfo"/>
         <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="50" parent="globals/VisualGearsField" pc="268436424" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="53" parent="globals/VisualGearsField" pc="268436428" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="54" parent="globals/VisualGearsField" pc="268436437" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="57" parent="globals/VisualGearsField" pc="268436446" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="58" parent="globals/VisualGearsField" pc="268436453" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="59" parent="globals/VisualGearsField" pc="268436456" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="60" parent="globals/VisualGearsField" pc="268436459" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="61" parent="globals/VisualGearsField" pc="268436466" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="64" parent="globals/VisualGearsField" pc="268436469" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="65" parent="globals/VisualGearsField" pc="268436483" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="68" parent="globals/VisualGearsField" pc="268436499" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="69" parent="globals/VisualGearsField" pc="268436502" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="70" parent="globals/VisualGearsField" pc="268436505" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="71" parent="globals/VisualGearsField" pc="268436508" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="72" parent="globals/VisualGearsField" pc="268436511" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="73" parent="globals/VisualGearsField" pc="268436514" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="76" parent="globals/VisualGearsField" pc="268436517" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="77" parent="globals/VisualGearsField" pc="268436529" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="78" parent="globals/VisualGearsField" pc="268436551" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="80" parent="globals/VisualGearsField" pc="268436563" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="81" parent="globals/VisualGearsField" pc="268436585" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="83" parent="globals/VisualGearsField" pc="268436597" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="84" parent="globals/VisualGearsField" pc="268436619" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="86" parent="globals/VisualGearsField" pc="268436631" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="87" parent="globals/VisualGearsField" pc="268436653" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="89" parent="globals/VisualGearsField" pc="268436665" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="90" parent="globals/VisualGearsField" pc="268436687" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="92" parent="globals/VisualGearsField" pc="268436699" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="93" parent="globals/VisualGearsField" pc="268436721" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="97" parent="globals/VisualGearsField" pc="268436733" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="98" parent="globals/VisualGearsField" pc="268436746" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="100" parent="globals/VisualGearsField" pc="268436753" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="101" parent="globals/VisualGearsField" pc="268436766" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="103" parent="globals/VisualGearsField" pc="268436773" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="104" parent="globals/VisualGearsField" pc="268436786" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="106" parent="globals/VisualGearsField" pc="268436793" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="107" parent="globals/VisualGearsField" pc="268436806" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="111" parent="globals/VisualGearsField" pc="268436813" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="115" parent="globals/VisualGearsField" pc="268436829" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="117" parent="globals/VisualGearsField" pc="268436845" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="118" parent="globals/VisualGearsField" pc="268436856" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="119" parent="globals/VisualGearsField" pc="268436869" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="122" parent="globals/VisualGearsField" pc="268436872" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="124" parent="globals/VisualGearsField" pc="268436883" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="125" parent="globals/VisualGearsField" pc="268436897" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="128" parent="globals/VisualGearsField" pc="268436918" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="129" parent="globals/VisualGearsField" pc="268436932" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="136" parent="globals/VisualGearsField" pc="268436960" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="137" parent="globals/VisualGearsField" pc="268436971" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="138" parent="globals/VisualGearsField" pc="268436984" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="141" parent="globals/VisualGearsField" pc="268436991" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="143" parent="globals/VisualGearsField" pc="268437002" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="144" parent="globals/VisualGearsField" pc="268437016" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="147" parent="globals/VisualGearsField" pc="268437037" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="148" parent="globals/VisualGearsField" pc="268437051" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="154" parent="globals/VisualGearsField" pc="268437079" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="157" parent="globals/VisualGearsField" pc="268437092" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="158" parent="globals/VisualGearsField" pc="268437106" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="159" parent="globals/VisualGearsField" pc="268437119" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="162" parent="globals/VisualGearsField" pc="268437142" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="165" parent="globals/VisualGearsField" pc="268437152" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="166" parent="globals/VisualGearsField" pc="268437157" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="169" parent="globals/VisualGearsField" pc="268437171" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="171" parent="globals/VisualGearsField" pc="268437208" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="174" parent="globals/VisualGearsField" pc="268437231" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="175" parent="globals/VisualGearsField" pc="268437245" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="176" parent="globals/VisualGearsField" pc="268437255" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="177" parent="globals/VisualGearsField" pc="268437272" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="178" parent="globals/VisualGearsField" pc="268437294" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="182" parent="globals/VisualGearsField" pc="268437320" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="183" parent="globals/VisualGearsField" pc="268437330" symbol="drawGearInfo"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="20" lineNum="15" parent="globals/VisualGearsField" pc="268437360" symbol="initialize"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="20" lineNum="16" parent="globals/VisualGearsField" pc="268437362" symbol="initialize"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="21" lineNum="34" parent="globals/VisualGearsField" pc="268437375" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="21" lineNum="36" parent="globals/VisualGearsField" pc="268437377" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="21" lineNum="37" parent="globals/VisualGearsField" pc="268437390" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="21" lineNum="40" parent="globals/VisualGearsField" pc="268437398" symbol="onUpdate"/>
-        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="22" lineNum="57" parent="globals/Rez/Layouts" pc="268437410" symbol="BottomRightLayout"/>
-        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="22" lineNum="58" parent="globals/Rez/Layouts" pc="268437421" symbol="BottomRightLayout"/>
-        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="22" lineNum="60" parent="globals/Rez/Layouts" pc="268437445" symbol="BottomRightLayout"/>
-        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="22" lineNum="62" parent="globals/Rez/Layouts" pc="268437528" symbol="BottomRightLayout"/>
-        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="22" lineNum="64" parent="globals/Rez/Layouts" pc="268437611" symbol="BottomRightLayout"/>
-        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="23" lineNum="37" parent="globals/Rez/Layouts" pc="268437631" symbol="TopRightLayout"/>
-        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="23" lineNum="38" parent="globals/Rez/Layouts" pc="268437642" symbol="TopRightLayout"/>
-        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="23" lineNum="40" parent="globals/Rez/Layouts" pc="268437666" symbol="TopRightLayout"/>
-        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="23" lineNum="42" parent="globals/Rez/Layouts" pc="268437749" symbol="TopRightLayout"/>
-        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="23" lineNum="44" parent="globals/Rez/Layouts" pc="268437832" symbol="TopRightLayout"/>
-        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="24" lineNum="47" parent="globals/Rez/Layouts" pc="268437852" symbol="BottomLeftLayout"/>
-        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="24" lineNum="48" parent="globals/Rez/Layouts" pc="268437863" symbol="BottomLeftLayout"/>
-        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="24" lineNum="50" parent="globals/Rez/Layouts" pc="268437887" symbol="BottomLeftLayout"/>
-        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="24" lineNum="52" parent="globals/Rez/Layouts" pc="268437969" symbol="BottomLeftLayout"/>
-        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="24" lineNum="54" parent="globals/Rez/Layouts" pc="268438051" symbol="BottomLeftLayout"/>
-        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="25" lineNum="27" parent="globals/Rez/Layouts" pc="268438071" symbol="TopLeftLayout"/>
-        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="25" lineNum="28" parent="globals/Rez/Layouts" pc="268438082" symbol="TopLeftLayout"/>
-        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="25" lineNum="30" parent="globals/Rez/Layouts" pc="268438106" symbol="TopLeftLayout"/>
-        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="25" lineNum="32" parent="globals/Rez/Layouts" pc="268438188" symbol="TopLeftLayout"/>
-        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="25" lineNum="34" parent="globals/Rez/Layouts" pc="268438270" symbol="TopLeftLayout"/>
-        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="26" lineNum="13" parent="globals/Rez/Layouts" pc="268438290" symbol="MainLayout"/>
-        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="26" lineNum="14" parent="globals/Rez/Layouts" pc="268438301" symbol="MainLayout"/>
-        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="26" lineNum="16" parent="globals/Rez/Layouts" pc="268438310" symbol="MainLayout"/>
-        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="26" lineNum="18" parent="globals/Rez/Layouts" pc="268438319" symbol="MainLayout"/>
-        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="26" lineNum="20" parent="globals/Rez/Layouts" pc="268438343" symbol="MainLayout"/>
-        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="26" lineNum="22" parent="globals/Rez/Layouts" pc="268438450" symbol="MainLayout"/>
-        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="26" lineNum="24" parent="globals/Rez/Layouts" pc="268438557" symbol="MainLayout"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="51" parent="globals/VisualGearsField" pc="268436428" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="54" parent="globals/VisualGearsField" pc="268436432" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="57" parent="globals/VisualGearsField" pc="268436435" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="58" parent="globals/VisualGearsField" pc="268436452" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="59" parent="globals/VisualGearsField" pc="268436458" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="60" parent="globals/VisualGearsField" pc="268436477" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="61" parent="globals/VisualGearsField" pc="268436484" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="62" parent="globals/VisualGearsField" pc="268436503" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="68" parent="globals/VisualGearsField" pc="268436513" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="69" parent="globals/VisualGearsField" pc="268436522" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="72" parent="globals/VisualGearsField" pc="268436531" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="73" parent="globals/VisualGearsField" pc="268436538" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="74" parent="globals/VisualGearsField" pc="268436541" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="75" parent="globals/VisualGearsField" pc="268436544" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="76" parent="globals/VisualGearsField" pc="268436551" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="79" parent="globals/VisualGearsField" pc="268436554" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="80" parent="globals/VisualGearsField" pc="268436568" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="83" parent="globals/VisualGearsField" pc="268436584" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="84" parent="globals/VisualGearsField" pc="268436587" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="85" parent="globals/VisualGearsField" pc="268436590" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="86" parent="globals/VisualGearsField" pc="268436593" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="87" parent="globals/VisualGearsField" pc="268436596" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="88" parent="globals/VisualGearsField" pc="268436599" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="91" parent="globals/VisualGearsField" pc="268436602" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="92" parent="globals/VisualGearsField" pc="268436614" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="93" parent="globals/VisualGearsField" pc="268436636" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="95" parent="globals/VisualGearsField" pc="268436648" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="96" parent="globals/VisualGearsField" pc="268436670" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="98" parent="globals/VisualGearsField" pc="268436682" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="99" parent="globals/VisualGearsField" pc="268436704" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="101" parent="globals/VisualGearsField" pc="268436716" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="102" parent="globals/VisualGearsField" pc="268436738" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="104" parent="globals/VisualGearsField" pc="268436750" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="105" parent="globals/VisualGearsField" pc="268436772" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="107" parent="globals/VisualGearsField" pc="268436784" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="108" parent="globals/VisualGearsField" pc="268436806" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="112" parent="globals/VisualGearsField" pc="268436818" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="113" parent="globals/VisualGearsField" pc="268436831" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="115" parent="globals/VisualGearsField" pc="268436838" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="116" parent="globals/VisualGearsField" pc="268436851" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="118" parent="globals/VisualGearsField" pc="268436858" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="119" parent="globals/VisualGearsField" pc="268436871" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="121" parent="globals/VisualGearsField" pc="268436878" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="122" parent="globals/VisualGearsField" pc="268436891" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="126" parent="globals/VisualGearsField" pc="268436898" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="129" parent="globals/VisualGearsField" pc="268436908" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="132" parent="globals/VisualGearsField" pc="268436924" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="136" parent="globals/VisualGearsField" pc="268436928" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="137" parent="globals/VisualGearsField" pc="268436939" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="138" parent="globals/VisualGearsField" pc="268436952" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="141" parent="globals/VisualGearsField" pc="268436962" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="143" parent="globals/VisualGearsField" pc="268436973" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="144" parent="globals/VisualGearsField" pc="268436987" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="147" parent="globals/VisualGearsField" pc="268437008" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="148" parent="globals/VisualGearsField" pc="268437022" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="154" parent="globals/VisualGearsField" pc="268437050" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="157" parent="globals/VisualGearsField" pc="268437066" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="160" parent="globals/VisualGearsField" pc="268437079" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="161" parent="globals/VisualGearsField" pc="268437090" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="162" parent="globals/VisualGearsField" pc="268437103" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="165" parent="globals/VisualGearsField" pc="268437107" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="167" parent="globals/VisualGearsField" pc="268437118" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="168" parent="globals/VisualGearsField" pc="268437132" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="171" parent="globals/VisualGearsField" pc="268437153" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="172" parent="globals/VisualGearsField" pc="268437167" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="178" parent="globals/VisualGearsField" pc="268437195" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="181" parent="globals/VisualGearsField" pc="268437211" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="182" parent="globals/VisualGearsField" pc="268437225" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="183" parent="globals/VisualGearsField" pc="268437238" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="186" parent="globals/VisualGearsField" pc="268437261" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="187" parent="globals/VisualGearsField" pc="268437266" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="188" parent="globals/VisualGearsField" pc="268437276" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="191" parent="globals/VisualGearsField" pc="268437290" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="193" parent="globals/VisualGearsField" pc="268437327" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="196" parent="globals/VisualGearsField" pc="268437350" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="197" parent="globals/VisualGearsField" pc="268437364" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="198" parent="globals/VisualGearsField" pc="268437374" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="199" parent="globals/VisualGearsField" pc="268437391" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="200" parent="globals/VisualGearsField" pc="268437413" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="204" parent="globals/VisualGearsField" pc="268437439" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="19" lineNum="205" parent="globals/VisualGearsField" pc="268437449" symbol="drawGearInfo"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="20" lineNum="15" parent="globals/VisualGearsField" pc="268437479" symbol="initialize"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="20" lineNum="16" parent="globals/VisualGearsField" pc="268437481" symbol="initialize"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="21" lineNum="34" parent="globals/VisualGearsField" pc="268437494" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="21" lineNum="36" parent="globals/VisualGearsField" pc="268437496" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="21" lineNum="37" parent="globals/VisualGearsField" pc="268437509" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\luc\\Documents\\GitHub\\VisualGears\\source\\VisualGearsField.mc" id="21" lineNum="40" parent="globals/VisualGearsField" pc="268437517" symbol="onUpdate"/>
+        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="22" lineNum="57" parent="globals/Rez/Layouts" pc="268437529" symbol="BottomRightLayout"/>
+        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="22" lineNum="58" parent="globals/Rez/Layouts" pc="268437540" symbol="BottomRightLayout"/>
+        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="22" lineNum="60" parent="globals/Rez/Layouts" pc="268437564" symbol="BottomRightLayout"/>
+        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="22" lineNum="62" parent="globals/Rez/Layouts" pc="268437647" symbol="BottomRightLayout"/>
+        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="22" lineNum="64" parent="globals/Rez/Layouts" pc="268437730" symbol="BottomRightLayout"/>
+        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="23" lineNum="37" parent="globals/Rez/Layouts" pc="268437750" symbol="TopRightLayout"/>
+        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="23" lineNum="38" parent="globals/Rez/Layouts" pc="268437761" symbol="TopRightLayout"/>
+        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="23" lineNum="40" parent="globals/Rez/Layouts" pc="268437785" symbol="TopRightLayout"/>
+        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="23" lineNum="42" parent="globals/Rez/Layouts" pc="268437868" symbol="TopRightLayout"/>
+        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="23" lineNum="44" parent="globals/Rez/Layouts" pc="268437951" symbol="TopRightLayout"/>
+        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="24" lineNum="47" parent="globals/Rez/Layouts" pc="268437971" symbol="BottomLeftLayout"/>
+        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="24" lineNum="48" parent="globals/Rez/Layouts" pc="268437982" symbol="BottomLeftLayout"/>
+        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="24" lineNum="50" parent="globals/Rez/Layouts" pc="268438006" symbol="BottomLeftLayout"/>
+        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="24" lineNum="52" parent="globals/Rez/Layouts" pc="268438088" symbol="BottomLeftLayout"/>
+        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="24" lineNum="54" parent="globals/Rez/Layouts" pc="268438170" symbol="BottomLeftLayout"/>
+        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="25" lineNum="27" parent="globals/Rez/Layouts" pc="268438190" symbol="TopLeftLayout"/>
+        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="25" lineNum="28" parent="globals/Rez/Layouts" pc="268438201" symbol="TopLeftLayout"/>
+        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="25" lineNum="30" parent="globals/Rez/Layouts" pc="268438225" symbol="TopLeftLayout"/>
+        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="25" lineNum="32" parent="globals/Rez/Layouts" pc="268438307" symbol="TopLeftLayout"/>
+        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="25" lineNum="34" parent="globals/Rez/Layouts" pc="268438389" symbol="TopLeftLayout"/>
+        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="26" lineNum="13" parent="globals/Rez/Layouts" pc="268438409" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="26" lineNum="14" parent="globals/Rez/Layouts" pc="268438420" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="26" lineNum="16" parent="globals/Rez/Layouts" pc="268438429" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="26" lineNum="18" parent="globals/Rez/Layouts" pc="268438438" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="26" lineNum="20" parent="globals/Rez/Layouts" pc="268438462" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="26" lineNum="22" parent="globals/Rez/Layouts" pc="268438569" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\luc\\Documents\\GitHub\\VisualGears\\bin\\gen\\006-B4061-00\\source\\Rez.mcgen" id="26" lineNum="24" parent="globals/Rez/Layouts" pc="268438676" symbol="MainLayout"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
@@ -244,63 +255,69 @@
         <entry arg="true" endPc="268436323" name="dc" stackId="1" startPc="268436171"/>
         <entry endPc="268436322" name="value" stackId="2" startPc="268436174"/>
         <entry arg="true" endPc="268436405" name="info" stackId="1" startPc="268436324"/>
-        <entry arg="true" endPc="268437359" name="dc" stackId="1" startPc="268436406"/>
-        <entry endPc="268437358" name="DEBUG" stackId="2" startPc="268436409"/>
-        <entry endPc="268437358" name="RECT_HEIGHT" stackId="3" startPc="268436409"/>
-        <entry endPc="268437358" name="RECT_SPACING" stackId="4" startPc="268436409"/>
-        <entry endPc="268437358" name="RECT_BORDER" stackId="5" startPc="268436409"/>
-        <entry endPc="268437358" name="TEXT_HEIGHT" stackId="6" startPc="268436409"/>
-        <entry endPc="268437358" name="width" stackId="7" startPc="268436409"/>
-        <entry endPc="268437358" name="height" stackId="8" startPc="268436409"/>
-        <entry endPc="268437358" name="colorBackground" stackId="9" startPc="268436409"/>
-        <entry endPc="268437358" name="colorBorder" stackId="10" startPc="268436409"/>
-        <entry endPc="268437358" name="colorSelected" stackId="11" startPc="268436409"/>
-        <entry endPc="268437358" name="colorUnselected" stackId="12" startPc="268436409"/>
-        <entry endPc="268437358" name="colorText" stackId="13" startPc="268436409"/>
-        <entry endPc="268437358" name="frontGearMax" stackId="14" startPc="268436409"/>
-        <entry endPc="268437358" name="frontGearIndex" stackId="15" startPc="268436409"/>
-        <entry endPc="268437358" name="frontGearSize" stackId="16" startPc="268436409"/>
-        <entry endPc="268437358" name="rearGearMax" stackId="17" startPc="268436409"/>
-        <entry endPc="268437358" name="rearGearIndex" stackId="18" startPc="268436409"/>
-        <entry endPc="268437358" name="rearGearSize" stackId="19" startPc="268436409"/>
-        <entry endPc="268437358" name="info" stackId="20" startPc="268436409"/>
-        <entry endPc="268437358" name="rectWidth" stackId="21" startPc="268436409"/>
-        <entry endPc="268437358" name="frontStartX" stackId="22" startPc="268436409"/>
-        <entry endPc="268436959" name="i" stackId="23" startPc="268436856"/>
-        <entry endPc="268436949" name="x" stackId="24" startPc="268436856"/>
-        <entry endPc="268436949" name="y" stackId="25" startPc="268436856"/>
-        <entry endPc="268437078" name="i" stackId="26" startPc="268436971"/>
-        <entry endPc="268437068" name="x" stackId="27" startPc="268436971"/>
-        <entry endPc="268437068" name="y" stackId="28" startPc="268436971"/>
-        <entry endPc="268437358" name="ratioY" stackId="29" startPc="268436409"/>
-        <entry endPc="268437358" name="ratioText" stackId="30" startPc="268436409"/>
-        <entry endPc="268437358" name="debugY" stackId="31" startPc="268436409"/>
-        <entry endPc="268437355" name="debugText" stackId="32" startPc="268437157"/>
-        <entry endPc="268437316" name="ratio" stackId="33" startPc="268437245"/>
-        <entry endPc="268437316" name="ratioCalcText" stackId="34" startPc="268437245"/>
-        <entry arg="true" endPc="268437409" name="dc" stackId="1" startPc="268437375"/>
-        <entry arg="true" endPc="268437630" name="dc" stackId="1" startPc="268437410"/>
-        <entry endPc="268437630" name="rez_cmp_local_custom_drawable_30478155969986979825" stackId="2" startPc="268437421"/>
-        <entry endPc="268437630" name="rez_cmp_local_text_label" stackId="3" startPc="268437421"/>
-        <entry endPc="268437630" name="rez_cmp_local_text_value" stackId="4" startPc="268437421"/>
-        <entry arg="true" endPc="268437851" name="dc" stackId="1" startPc="268437631"/>
-        <entry endPc="268437851" name="rez_cmp_local_custom_drawable_89271424020845276252" stackId="2" startPc="268437642"/>
-        <entry endPc="268437851" name="rez_cmp_local_text_label" stackId="3" startPc="268437642"/>
-        <entry endPc="268437851" name="rez_cmp_local_text_value" stackId="4" startPc="268437642"/>
-        <entry arg="true" endPc="268438070" name="dc" stackId="1" startPc="268437852"/>
-        <entry endPc="268438070" name="rez_cmp_local_custom_drawable_16900854891365553655" stackId="2" startPc="268437863"/>
-        <entry endPc="268438070" name="rez_cmp_local_text_label" stackId="3" startPc="268437863"/>
-        <entry endPc="268438070" name="rez_cmp_local_text_value" stackId="4" startPc="268437863"/>
-        <entry arg="true" endPc="268438289" name="dc" stackId="1" startPc="268438071"/>
-        <entry endPc="268438289" name="rez_cmp_local_custom_drawable_18312310471762002329" stackId="2" startPc="268438082"/>
-        <entry endPc="268438289" name="rez_cmp_local_text_label" stackId="3" startPc="268438082"/>
-        <entry endPc="268438289" name="rez_cmp_local_text_value" stackId="4" startPc="268438082"/>
-        <entry arg="true" endPc="268438576" name="dc" stackId="1" startPc="268438290"/>
-        <entry endPc="268438576" name="rez_cmp_local_var_dc_getHeight" stackId="2" startPc="268438301"/>
-        <entry endPc="268438576" name="rez_cmp_local_var_dc_getWidth" stackId="3" startPc="268438301"/>
-        <entry endPc="268438576" name="rez_cmp_local_custom_drawable_12258899601884250965" stackId="4" startPc="268438301"/>
-        <entry endPc="268438576" name="rez_cmp_local_text_label" stackId="5" startPc="268438301"/>
-        <entry endPc="268438576" name="rez_cmp_local_text_value" stackId="6" startPc="268438301"/>
+        <entry arg="true" endPc="268437478" name="dc" stackId="1" startPc="268436406"/>
+        <entry endPc="268437477" name="DEBUG" stackId="2" startPc="268436409"/>
+        <entry endPc="268437477" name="RECT_HEIGHT" stackId="3" startPc="268436409"/>
+        <entry endPc="268437477" name="RECT_SPACING" stackId="4" startPc="268436409"/>
+        <entry endPc="268437477" name="RECT_BORDER" stackId="5" startPc="268436409"/>
+        <entry endPc="268437477" name="TEXT_HEIGHT" stackId="6" startPc="268436409"/>
+        <entry endPc="268437477" name="MARGIN" stackId="7" startPc="268436409"/>
+        <entry endPc="268437477" name="deviceOffset" stackId="8" startPc="268436409"/>
+        <entry endPc="268437477" name="deviceType" stackId="9" startPc="268436409"/>
+        <entry endPc="268437477" name="width" stackId="10" startPc="268436409"/>
+        <entry endPc="268437477" name="height" stackId="11" startPc="268436409"/>
+        <entry endPc="268437477" name="colorBackground" stackId="12" startPc="268436409"/>
+        <entry endPc="268437477" name="colorBorder" stackId="13" startPc="268436409"/>
+        <entry endPc="268437477" name="colorSelected" stackId="14" startPc="268436409"/>
+        <entry endPc="268437477" name="colorUnselected" stackId="15" startPc="268436409"/>
+        <entry endPc="268437477" name="colorText" stackId="16" startPc="268436409"/>
+        <entry endPc="268437477" name="frontGearMax" stackId="17" startPc="268436409"/>
+        <entry endPc="268437477" name="frontGearIndex" stackId="18" startPc="268436409"/>
+        <entry endPc="268437477" name="frontGearSize" stackId="19" startPc="268436409"/>
+        <entry endPc="268437477" name="rearGearMax" stackId="20" startPc="268436409"/>
+        <entry endPc="268437477" name="rearGearIndex" stackId="21" startPc="268436409"/>
+        <entry endPc="268437477" name="rearGearSize" stackId="22" startPc="268436409"/>
+        <entry endPc="268437477" name="info" stackId="23" startPc="268436409"/>
+        <entry endPc="268437477" name="usableWidth" stackId="24" startPc="268436409"/>
+        <entry endPc="268437477" name="rearRectWidth" stackId="25" startPc="268436409"/>
+        <entry endPc="268437477" name="frontRectWidth" stackId="26" startPc="268436409"/>
+        <entry endPc="268437049" name="i" stackId="27" startPc="268436939"/>
+        <entry endPc="268437039" name="x" stackId="28" startPc="268436939"/>
+        <entry endPc="268437039" name="y" stackId="29" startPc="268436939"/>
+        <entry endPc="268437477" name="frontTotalWidth" stackId="30" startPc="268436409"/>
+        <entry endPc="268437477" name="frontStartX" stackId="31" startPc="268436409"/>
+        <entry endPc="268437194" name="i" stackId="32" startPc="268437090"/>
+        <entry endPc="268437184" name="x" stackId="33" startPc="268437090"/>
+        <entry endPc="268437184" name="y" stackId="34" startPc="268437090"/>
+        <entry endPc="268437477" name="ratioY" stackId="35" startPc="268436409"/>
+        <entry endPc="268437477" name="ratioText" stackId="36" startPc="268436409"/>
+        <entry endPc="268437474" name="debugY" stackId="37" startPc="268437266"/>
+        <entry endPc="268437474" name="debugText" stackId="38" startPc="268437266"/>
+        <entry endPc="268437435" name="ratio" stackId="39" startPc="268437364"/>
+        <entry endPc="268437435" name="ratioCalcText" stackId="40" startPc="268437364"/>
+        <entry arg="true" endPc="268437528" name="dc" stackId="1" startPc="268437494"/>
+        <entry arg="true" endPc="268437749" name="dc" stackId="1" startPc="268437529"/>
+        <entry endPc="268437749" name="rez_cmp_local_custom_drawable_11744276011942598596" stackId="2" startPc="268437540"/>
+        <entry endPc="268437749" name="rez_cmp_local_text_label" stackId="3" startPc="268437540"/>
+        <entry endPc="268437749" name="rez_cmp_local_text_value" stackId="4" startPc="268437540"/>
+        <entry arg="true" endPc="268437970" name="dc" stackId="1" startPc="268437750"/>
+        <entry endPc="268437970" name="rez_cmp_local_custom_drawable_16475916228841754211" stackId="2" startPc="268437761"/>
+        <entry endPc="268437970" name="rez_cmp_local_text_label" stackId="3" startPc="268437761"/>
+        <entry endPc="268437970" name="rez_cmp_local_text_value" stackId="4" startPc="268437761"/>
+        <entry arg="true" endPc="268438189" name="dc" stackId="1" startPc="268437971"/>
+        <entry endPc="268438189" name="rez_cmp_local_custom_drawable_10938386401291993157" stackId="2" startPc="268437982"/>
+        <entry endPc="268438189" name="rez_cmp_local_text_label" stackId="3" startPc="268437982"/>
+        <entry endPc="268438189" name="rez_cmp_local_text_value" stackId="4" startPc="268437982"/>
+        <entry arg="true" endPc="268438408" name="dc" stackId="1" startPc="268438190"/>
+        <entry endPc="268438408" name="rez_cmp_local_custom_drawable_17403222281294791200" stackId="2" startPc="268438201"/>
+        <entry endPc="268438408" name="rez_cmp_local_text_label" stackId="3" startPc="268438201"/>
+        <entry endPc="268438408" name="rez_cmp_local_text_value" stackId="4" startPc="268438201"/>
+        <entry arg="true" endPc="268438695" name="dc" stackId="1" startPc="268438409"/>
+        <entry endPc="268438695" name="rez_cmp_local_var_dc_getHeight" stackId="2" startPc="268438420"/>
+        <entry endPc="268438695" name="rez_cmp_local_var_dc_getWidth" stackId="3" startPc="268438420"/>
+        <entry endPc="268438695" name="rez_cmp_local_custom_drawable_92337760510520562831" stackId="4" startPc="268438420"/>
+        <entry endPc="268438695" name="rez_cmp_local_text_label" stackId="5" startPc="268438420"/>
+        <entry endPc="268438695" name="rez_cmp_local_text_value" stackId="6" startPc="268438420"/>
     </localVars>
     <deviceInfo deviceVersion="85752c82f0edc7cb314aaadc3429577cfaad3234" partNumber="006-B4061-00"/>
     <annotations>
@@ -391,34 +408,34 @@
             <param id="info"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437359" name="drawGearInfo" parent="VisualGearsField" startPc="268436406">
+        <functionEntry accessMode="public" endPc="268437478" name="drawGearInfo" parent="VisualGearsField" startPc="268436406">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437374" name="initialize" parent="VisualGearsField" startPc="268437360">
+        <functionEntry accessMode="public" endPc="268437493" name="initialize" parent="VisualGearsField" startPc="268437479">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437409" name="onUpdate" parent="VisualGearsField" startPc="268437375">
+        <functionEntry accessMode="public" endPc="268437528" name="onUpdate" parent="VisualGearsField" startPc="268437494">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437630" name="BottomRightLayout" parent="Layouts" startPc="268437410">
+        <functionEntry accessMode="public" endPc="268437749" name="BottomRightLayout" parent="Layouts" startPc="268437529">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437851" name="TopRightLayout" parent="Layouts" startPc="268437631">
+        <functionEntry accessMode="public" endPc="268437970" name="TopRightLayout" parent="Layouts" startPc="268437750">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438070" name="BottomLeftLayout" parent="Layouts" startPc="268437852">
+        <functionEntry accessMode="public" endPc="268438189" name="BottomLeftLayout" parent="Layouts" startPc="268437971">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438289" name="TopLeftLayout" parent="Layouts" startPc="268438071">
+        <functionEntry accessMode="public" endPc="268438408" name="TopLeftLayout" parent="Layouts" startPc="268438190">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438576" name="MainLayout" parent="Layouts" startPc="268438290">
+        <functionEntry accessMode="public" endPc="268438695" name="MainLayout" parent="Layouts" startPc="268438409">
             <param id="dc"/>
             <documentation/>
         </functionEntry>

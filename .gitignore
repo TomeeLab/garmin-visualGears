@@ -1,0 +1,59 @@
+# Garmin Connect IQ specific files and directories
+/bin/
+/build/
+/build-dev/
+/build-release/
+*.prg
+*.iq
+*.debug.xml
+*.release.xml
+/simulator/
+/launcher-*/
+/store/
+/export
+
+# Garmin developer key
+developer_key
+developer_key.der
+developer_key.der.sig
+*.der
+*.der.sig
+
+# Monkey C jungle files (keep monkey.jungle file itself)
+*.jungles
+
+# Log files
+*.log
+
+# Eclipse project files
+.project
+.settings/
+
+# Visual Studio Code specific
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/
+
+# Manifest backup files
+manifest.xml.*.bak
+
+# Temporary files
+.tmp/
+/temp/
+*.tmp
+*.temp
+
+# Operating system files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Private properties and configuration
+private.properties
+private.xml
+local.properties

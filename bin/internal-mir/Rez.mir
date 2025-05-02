@@ -45,10 +45,10 @@ c_Users_luc_Documents_GitHub_VisualGears_bin_gen_006_B4061_00_source_Rez_mcgen_1
             lputv %rez_cmp_local_var_dc_getWidth.2 %tmp.6;
 [ "c:\Users\luc\Documents\GitHub\VisualGears\bin\gen\006-B4061-00\source\Rez.mcgen" 18 12 ]
             [ "c_Users_luc_Documents_GitHub_VisualGears_bin_gen_006_B4061_00_source_Rez_mcgen_13_74_25_8_start" "c_Users_luc_Documents_GitHub_VisualGears_bin_gen_006_B4061_00_source_Rez_mcgen_13_74_25_8_stop" ]
-            %rez_cmp_local_custom_drawable_12258899601884250965.3 = local;
+            %rez_cmp_local_custom_drawable_92337760510520562831.3 = local;
             %tmp.10 = getv ? :Background;
             %tmp.7 = newc %tmp.10 ();
-            lputv %rez_cmp_local_custom_drawable_12258899601884250965.3 %tmp.7;
+            lputv %rez_cmp_local_custom_drawable_92337760510520562831.3 %tmp.7;
 [ "c:\Users\luc\Documents\GitHub\VisualGears\bin\gen\006-B4061-00\source\Rez.mcgen" 20 12 ]
             [ "c_Users_luc_Documents_GitHub_VisualGears_bin_gen_006_B4061_00_source_Rez_mcgen_13_74_25_8_start" "c_Users_luc_Documents_GitHub_VisualGears_bin_gen_006_B4061_00_source_Rez_mcgen_13_74_25_8_stop" ]
             %rez_cmp_local_text_label.4 = local;
@@ -141,7 +141,7 @@ c_Users_luc_Documents_GitHub_VisualGears_bin_gen_006_B4061_00_source_Rez_mcgen_1
             lputv %rez_cmp_local_text_value.5 %tmp.61;
 [ "c:\Users\luc\Documents\GitHub\VisualGears\bin\gen\006-B4061-00\source\Rez.mcgen" 24 12 ]
             %tmp.111 = newa 3 Array<WatchUi.Drawable>;
-            %tmp.113 = lgetv %rez_cmp_local_custom_drawable_12258899601884250965.3;
+            %tmp.113 = lgetv %rez_cmp_local_custom_drawable_92337760510520562831.3;
             %tmp.114 = dup %tmp.111;
             %tmp.115 = aputv %tmp.114 0 %tmp.113;
             %tmp.117 = lgetv %rez_cmp_local_text_label.4;
@@ -158,10 +158,10 @@ c_Users_luc_Documents_GitHub_VisualGears_bin_gen_006_B4061_00_source_Rez_mcgen_1
 c_Users_luc_Documents_GitHub_VisualGears_bin_gen_006_B4061_00_source_Rez_mcgen_27_77_35_8_start:
 [ "c:\Users\luc\Documents\GitHub\VisualGears\bin\gen\006-B4061-00\source\Rez.mcgen" 28 12 ]
             [ "c_Users_luc_Documents_GitHub_VisualGears_bin_gen_006_B4061_00_source_Rez_mcgen_27_77_35_8_start" "c_Users_luc_Documents_GitHub_VisualGears_bin_gen_006_B4061_00_source_Rez_mcgen_27_77_35_8_stop" ]
-            %rez_cmp_local_custom_drawable_18312310471762002329.1 = local;
+            %rez_cmp_local_custom_drawable_17403222281294791200.1 = local;
             %tmp.4 = getv ? :Background;
             %tmp.1 = newc %tmp.4 ();
-            lputv %rez_cmp_local_custom_drawable_18312310471762002329.1 %tmp.1;
+            lputv %rez_cmp_local_custom_drawable_17403222281294791200.1 %tmp.1;
 [ "c:\Users\luc\Documents\GitHub\VisualGears\bin\gen\006-B4061-00\source\Rez.mcgen" 30 12 ]
             [ "c_Users_luc_Documents_GitHub_VisualGears_bin_gen_006_B4061_00_source_Rez_mcgen_27_77_35_8_start" "c_Users_luc_Documents_GitHub_VisualGears_bin_gen_006_B4061_00_source_Rez_mcgen_27_77_35_8_stop" ]
             %rez_cmp_local_text_label.2 = local;
@@ -234,7 +234,7 @@ c_Users_luc_Documents_GitHub_VisualGears_bin_gen_006_B4061_00_source_Rez_mcgen_2
             lputv %rez_cmp_local_text_value.3 %tmp.43;
 [ "c:\Users\luc\Documents\GitHub\VisualGears\bin\gen\006-B4061-00\source\Rez.mcgen" 34 12 ]
             %tmp.81 = newa 3 Array<WatchUi.Drawable>;
-            %tmp.83 = lgetv %rez_cmp_local_custom_drawable_18312310471762002329.1;
+            %tmp.83 = lgetv %rez_cmp_local_custom_drawable_17403222281294791200.1;
             %tmp.84 = dup %tmp.81;
             %tmp.85 = aputv %tmp.84 0 %tmp.83;
             %tmp.87 = lgetv %rez_cmp_local_text_label.2;
@@ -251,10 +251,10 @@ c_Users_luc_Documents_GitHub_VisualGears_bin_gen_006_B4061_00_source_Rez_mcgen_2
 c_Users_luc_Documents_GitHub_VisualGears_bin_gen_006_B4061_00_source_Rez_mcgen_37_78_45_8_start:
 [ "c:\Users\luc\Documents\GitHub\VisualGears\bin\gen\006-B4061-00\source\Rez.mcgen" 38 12 ]
             [ "c_Users_luc_Documents_GitHub_VisualGears_bin_gen_006_B4061_00_source_Rez_mcgen_37_78_45_8_start" "c_Users_luc_Documents_GitHub_VisualGears_bin_gen_006_B4061_00_source_Rez_mcgen_37_78_45_8_stop" ]
-            %rez_cmp_local_custom_drawable_89271424020845276252.1 = local;
+            %rez_cmp_local_custom_drawable_16475916228841754211.1 = local;
             %tmp.4 = getv ? :Background;
             %tmp.1 = newc %tmp.4 ();
-            lputv %rez_cmp_local_custom_drawable_89271424020845276252.1 %tmp.1;
+            lputv %rez_cmp_local_custom_drawable_16475916228841754211.1 %tmp.1;
 [ "c:\Users\luc\Documents\GitHub\VisualGears\bin\gen\006-B4061-00\source\Rez.mcgen" 40 12 ]
             [ "c_Users_luc_Documents_GitHub_VisualGears_bin_gen_006_B4061_00_source_Rez_mcgen_37_78_45_8_start" "c_Users_luc_Documents_GitHub_VisualGears_bin_gen_006_B4061_00_source_Rez_mcgen_37_78_45_8_stop" ]
             %rez_cmp_local_text_label.2 = local;
@@ -327,7 +327,7 @@ c_Users_luc_Documents_GitHub_VisualGears_bin_gen_006_B4061_00_source_Rez_mcgen_3
             lputv %rez_cmp_local_text_value.3 %tmp.43;
 [ "c:\Users\luc\Documents\GitHub\VisualGears\bin\gen\006-B4061-00\source\Rez.mcgen" 44 12 ]
             %tmp.81 = newa 3 Array<WatchUi.Drawable>;
-            %tmp.83 = lgetv %rez_cmp_local_custom_drawable_89271424020845276252.1;
+            %tmp.83 = lgetv %rez_cmp_local_custom_drawable_16475916228841754211.1;
             %tmp.84 = dup %tmp.81;
             %tmp.85 = aputv %tmp.84 0 %tmp.83;
             %tmp.87 = lgetv %rez_cmp_local_text_label.2;
@@ -344,10 +344,10 @@ c_Users_luc_Documents_GitHub_VisualGears_bin_gen_006_B4061_00_source_Rez_mcgen_3
 c_Users_luc_Documents_GitHub_VisualGears_bin_gen_006_B4061_00_source_Rez_mcgen_47_80_55_8_start:
 [ "c:\Users\luc\Documents\GitHub\VisualGears\bin\gen\006-B4061-00\source\Rez.mcgen" 48 12 ]
             [ "c_Users_luc_Documents_GitHub_VisualGears_bin_gen_006_B4061_00_source_Rez_mcgen_47_80_55_8_start" "c_Users_luc_Documents_GitHub_VisualGears_bin_gen_006_B4061_00_source_Rez_mcgen_47_80_55_8_stop" ]
-            %rez_cmp_local_custom_drawable_16900854891365553655.1 = local;
+            %rez_cmp_local_custom_drawable_10938386401291993157.1 = local;
             %tmp.4 = getv ? :Background;
             %tmp.1 = newc %tmp.4 ();
-            lputv %rez_cmp_local_custom_drawable_16900854891365553655.1 %tmp.1;
+            lputv %rez_cmp_local_custom_drawable_10938386401291993157.1 %tmp.1;
 [ "c:\Users\luc\Documents\GitHub\VisualGears\bin\gen\006-B4061-00\source\Rez.mcgen" 50 12 ]
             [ "c_Users_luc_Documents_GitHub_VisualGears_bin_gen_006_B4061_00_source_Rez_mcgen_47_80_55_8_start" "c_Users_luc_Documents_GitHub_VisualGears_bin_gen_006_B4061_00_source_Rez_mcgen_47_80_55_8_stop" ]
             %rez_cmp_local_text_label.2 = local;
@@ -420,7 +420,7 @@ c_Users_luc_Documents_GitHub_VisualGears_bin_gen_006_B4061_00_source_Rez_mcgen_4
             lputv %rez_cmp_local_text_value.3 %tmp.43;
 [ "c:\Users\luc\Documents\GitHub\VisualGears\bin\gen\006-B4061-00\source\Rez.mcgen" 54 12 ]
             %tmp.81 = newa 3 Array<WatchUi.Drawable>;
-            %tmp.83 = lgetv %rez_cmp_local_custom_drawable_16900854891365553655.1;
+            %tmp.83 = lgetv %rez_cmp_local_custom_drawable_10938386401291993157.1;
             %tmp.84 = dup %tmp.81;
             %tmp.85 = aputv %tmp.84 0 %tmp.83;
             %tmp.87 = lgetv %rez_cmp_local_text_label.2;
@@ -437,10 +437,10 @@ c_Users_luc_Documents_GitHub_VisualGears_bin_gen_006_B4061_00_source_Rez_mcgen_4
 c_Users_luc_Documents_GitHub_VisualGears_bin_gen_006_B4061_00_source_Rez_mcgen_57_81_65_8_start:
 [ "c:\Users\luc\Documents\GitHub\VisualGears\bin\gen\006-B4061-00\source\Rez.mcgen" 58 12 ]
             [ "c_Users_luc_Documents_GitHub_VisualGears_bin_gen_006_B4061_00_source_Rez_mcgen_57_81_65_8_start" "c_Users_luc_Documents_GitHub_VisualGears_bin_gen_006_B4061_00_source_Rez_mcgen_57_81_65_8_stop" ]
-            %rez_cmp_local_custom_drawable_30478155969986979825.1 = local;
+            %rez_cmp_local_custom_drawable_11744276011942598596.1 = local;
             %tmp.4 = getv ? :Background;
             %tmp.1 = newc %tmp.4 ();
-            lputv %rez_cmp_local_custom_drawable_30478155969986979825.1 %tmp.1;
+            lputv %rez_cmp_local_custom_drawable_11744276011942598596.1 %tmp.1;
 [ "c:\Users\luc\Documents\GitHub\VisualGears\bin\gen\006-B4061-00\source\Rez.mcgen" 60 12 ]
             [ "c_Users_luc_Documents_GitHub_VisualGears_bin_gen_006_B4061_00_source_Rez_mcgen_57_81_65_8_start" "c_Users_luc_Documents_GitHub_VisualGears_bin_gen_006_B4061_00_source_Rez_mcgen_57_81_65_8_stop" ]
             %rez_cmp_local_text_label.2 = local;
@@ -513,7 +513,7 @@ c_Users_luc_Documents_GitHub_VisualGears_bin_gen_006_B4061_00_source_Rez_mcgen_5
             lputv %rez_cmp_local_text_value.3 %tmp.43;
 [ "c:\Users\luc\Documents\GitHub\VisualGears\bin\gen\006-B4061-00\source\Rez.mcgen" 64 12 ]
             %tmp.81 = newa 3 Array<WatchUi.Drawable>;
-            %tmp.83 = lgetv %rez_cmp_local_custom_drawable_30478155969986979825.1;
+            %tmp.83 = lgetv %rez_cmp_local_custom_drawable_11744276011942598596.1;
             %tmp.84 = dup %tmp.81;
             %tmp.85 = aputv %tmp.84 0 %tmp.83;
             %tmp.87 = lgetv %rez_cmp_local_text_label.2;
