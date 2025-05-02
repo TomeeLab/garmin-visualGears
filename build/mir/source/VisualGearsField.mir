@@ -1,0 +1,871 @@
+[ @file = "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc"; @line = 1; ]
+using Toybox.WatchUi;
+[ @file = "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc"; @line = 2; ]
+using Toybox.Graphics;
+[ @file = "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc"; @line = 3; ]
+using Toybox.System;
+[ @file = "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc"; @line = 4; ]
+using Toybox.Lang;
+[ @file = "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc"; @line = 5; ]
+using Toybox.Activity;
+[ @file = "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc"; @line = 6; ]
+using Toybox.Application;
+[ @file = "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc"; @line = 8; ]
+class VisualGearsField extends WatchUi.DataField{
+    [ @file = "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc"; @line = 8; ]
+    <init> {
+    }
+    [ @file = "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc"; @line = 8; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc"; @line = 11; @position = 15; ]
+    protected
+    var frontGear = null;
+    [ @file = "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc"; @line = 12; @position = 15; ]
+    protected
+    var rearGear = null;
+    [ @file = "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc"; @line = 15; ]
+    function initialize() as Void {
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_15_26_17_4_start:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 16 8 ]
+        %tmp.2 = getv ? :DataField;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_15_26_17_4_stop:
+    }
+    [ @file = "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc"; @line = 20; ]
+    function compute(info) {
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_20_27_31_4_start:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 22 8 ]
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_22_8_24_8_if_stmt:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_22_12_22_75_begin:
+        %tmp.2 = lgetv %info;
+        %tmp.4 = const :frontDerailleurIndex;
+        %tmp.5 = canhazplz %tmp.2 %tmp.4;
+        bf %tmp.5 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_22_8_24_8_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_22_46_22_75_true:
+        %tmp.6 = lgetv %info;
+        %tmp.7 = as %tmp.6 { (interface { var frontDerailleurIndex; }) };
+        %tmp.8 = getv %tmp.7 :frontDerailleurIndex;
+        %tmp.9 = null;
+        %tmp.10 = ne %tmp.8 %tmp.9;
+        push %tmp.10;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_22_46_22_75_end:
+        %tmp.11 = phi [%tmp.5 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_22_12_22_75_begin] [%tmp.10 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_22_46_22_75_true] [%tmp.11 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_22_46_22_75_end];
+        bf %tmp.11 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_22_8_24_8_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_22_8_24_8_if_true:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_22_81_24_8_start:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 23 12 ]
+        %tmp.12 = lgetv %info;
+        %tmp.13 = as %tmp.12 { (interface { var frontDerailleurIndex; }) };
+        %tmp.14 = getv %tmp.13 :frontDerailleurIndex;
+        putv self :frontGear %tmp.14;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_22_81_24_8_stop:
+        goto @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_22_8_24_8_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_22_8_24_8_if_end:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 25 8 ]
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_25_8_27_8_if_stmt:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_25_12_25_73_begin:
+        %tmp.16 = lgetv %info;
+        %tmp.18 = const :rearDerailleurIndex;
+        %tmp.19 = canhazplz %tmp.16 %tmp.18;
+        bf %tmp.19 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_25_8_27_8_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_25_45_25_73_true:
+        %tmp.20 = lgetv %info;
+        %tmp.21 = as %tmp.20 { (interface { var rearDerailleurIndex; }) };
+        %tmp.22 = getv %tmp.21 :rearDerailleurIndex;
+        %tmp.23 = null;
+        %tmp.24 = ne %tmp.22 %tmp.23;
+        push %tmp.24;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_25_45_25_73_end:
+        %tmp.25 = phi [%tmp.19 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_25_12_25_73_begin] [%tmp.24 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_25_45_25_73_true] [%tmp.25 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_25_45_25_73_end];
+        bf %tmp.25 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_25_8_27_8_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_25_8_27_8_if_true:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_25_79_27_8_start:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 26 12 ]
+        %tmp.26 = lgetv %info;
+        %tmp.27 = as %tmp.26 { (interface { var rearDerailleurIndex; }) };
+        %tmp.28 = getv %tmp.27 :rearDerailleurIndex;
+        putv self :rearGear %tmp.28;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_25_79_27_8_stop:
+        goto @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_25_8_27_8_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_25_8_27_8_if_end:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 30 8 ]
+        %tmp.29 = true;
+        ret %tmp.29;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_20_27_31_4_stop:
+    }
+    [ @file = "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc"; @line = 34; ]
+    function onUpdate(dc) {
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_34_26_41_4_start:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 36 8 ]
+        %tmp.1 = lgetv %dc;
+        %tmp.2 = getv function %tmp.1 :setColor;
+        %tmp.3 = getm $.Toybox.Graphics;
+        %tmp.4 = getv %tmp.3 :COLOR_TRANSPARENT;
+        %tmp.5 = getm $.Toybox.Graphics;
+        %tmp.6 = getv %tmp.5 :COLOR_BLACK;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 37 8 ]
+        %tmp.7 = lgetv %dc;
+        %tmp.8 = getv function %tmp.7 :clear;
+        invoke %tmp.7 %tmp.8();
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 40 8 ]
+        %tmp.9 = self;
+        %tmp.10 = getv function %tmp.9 :drawGearInfo;
+        %tmp.12 = lgetv %dc;
+        invoke %tmp.9 %tmp.10(%tmp.12);
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_34_26_41_4_stop:
+    }
+    [ @file = "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc"; @line = 44; ]
+    function drawGearInfo(dc) {
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_start:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 46 8 ]
+        [ "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_start" "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_stop" ]
+        %DEBUG.1 = local;
+        %tmp.1 = false;
+        lputv %DEBUG.1 %tmp.1;
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 47 8 ]
+        [ "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_start" "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_stop" ]
+        %RECT_HEIGHT.2 = local;
+        %tmp.2 = 20;
+        lputv %RECT_HEIGHT.2 %tmp.2;
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 48 8 ]
+        [ "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_start" "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_stop" ]
+        %RECT_SPACING.3 = local;
+        %tmp.3 = 4;
+        lputv %RECT_SPACING.3 %tmp.3;
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 49 8 ]
+        [ "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_start" "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_stop" ]
+        %RECT_BORDER.4 = local;
+        %tmp.4 = 2;
+        lputv %RECT_BORDER.4 %tmp.4;
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 50 8 ]
+        [ "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_start" "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_stop" ]
+        %TEXT_HEIGHT.5 = local;
+        %tmp.5 = 15;
+        lputv %TEXT_HEIGHT.5 %tmp.5;
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 53 8 ]
+        [ "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_start" "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_stop" ]
+        %width.6 = local;
+        %tmp.6 = lgetv %dc;
+        %tmp.7 = getv function %tmp.6 :getWidth;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        lputv %width.6 %tmp.8;
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 54 8 ]
+        [ "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_start" "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_stop" ]
+        %height.7 = local;
+        %tmp.9 = lgetv %dc;
+        %tmp.10 = getv function %tmp.9 :getHeight;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        lputv %height.7 %tmp.11;
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 57 8 ]
+        [ "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_start" "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_stop" ]
+        %colorBackground.8 = local;
+        %tmp.12 = getm $.Toybox.Graphics;
+        %tmp.13 = getv %tmp.12 :COLOR_WHITE;
+        lputv %colorBackground.8 %tmp.13;
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 58 8 ]
+        [ "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_start" "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_stop" ]
+        %colorBorder.9 = local;
+        %tmp.14 = getm $.Toybox.Graphics;
+        %tmp.15 = getv %tmp.14 :COLOR_BLACK;
+        lputv %colorBorder.9 %tmp.15;
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 59 8 ]
+        [ "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_start" "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_stop" ]
+        %colorSelected.10 = local;
+        %tmp.16 = getm $.Toybox.Graphics;
+        %tmp.17 = getv %tmp.16 :COLOR_BLACK;
+        lputv %colorSelected.10 %tmp.17;
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 60 8 ]
+        [ "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_start" "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_stop" ]
+        %colorUnselected.11 = local;
+        %tmp.18 = getm $.Toybox.Graphics;
+        %tmp.19 = getv %tmp.18 :COLOR_WHITE;
+        lputv %colorUnselected.11 %tmp.19;
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 61 8 ]
+        [ "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_start" "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_stop" ]
+        %colorText.12 = local;
+        %tmp.20 = getm $.Toybox.Graphics;
+        %tmp.21 = getv %tmp.20 :COLOR_BLACK;
+        lputv %colorText.12 %tmp.21;
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 64 8 ]
+        %tmp.22 = lgetv %dc;
+        %tmp.23 = getv function %tmp.22 :setColor;
+        %tmp.25 = lgetv %colorBackground.8;
+        %tmp.27 = lgetv %colorBackground.8;
+        invoke %tmp.22 %tmp.23(%tmp.25, %tmp.27);
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 65 8 ]
+        %tmp.28 = lgetv %dc;
+        %tmp.29 = getv function %tmp.28 :fillRectangle;
+        %tmp.30 = 0;
+        %tmp.31 = 0;
+        %tmp.33 = lgetv %width.6;
+        %tmp.35 = lgetv %height.7;
+        invoke %tmp.28 %tmp.29(%tmp.30, %tmp.31, %tmp.33, %tmp.35);
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 68 8 ]
+        [ "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_start" "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_stop" ]
+        %frontGearMax.13 = local;
+        %tmp.36 = 0;
+        lputv %frontGearMax.13 %tmp.36;
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 69 8 ]
+        [ "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_start" "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_stop" ]
+        %frontGearIndex.14 = local;
+        %tmp.37 = 0;
+        lputv %frontGearIndex.14 %tmp.37;
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 70 8 ]
+        [ "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_start" "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_stop" ]
+        %frontGearSize.15 = local;
+        %tmp.38 = 0;
+        lputv %frontGearSize.15 %tmp.38;
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 71 8 ]
+        [ "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_start" "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_stop" ]
+        %rearGearMax.16 = local;
+        %tmp.39 = 0;
+        lputv %rearGearMax.16 %tmp.39;
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 72 8 ]
+        [ "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_start" "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_stop" ]
+        %rearGearIndex.17 = local;
+        %tmp.40 = 0;
+        lputv %rearGearIndex.17 %tmp.40;
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 73 8 ]
+        [ "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_start" "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_stop" ]
+        %rearGearSize.18 = local;
+        %tmp.41 = 0;
+        lputv %rearGearSize.18 %tmp.41;
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 76 8 ]
+        [ "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_start" "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_stop" ]
+        %info.19 = local;
+        %tmp.42 = getm $.Toybox.Activity;
+        %tmp.43 = getv function %tmp.42 :getActivityInfo;
+        %tmp.44 = invoke %tmp.42 %tmp.43();
+        lputv %info.19 %tmp.44;
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 77 8 ]
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_77_8_79_8_if_stmt:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_77_12_77_71_begin:
+        %tmp.46 = lgetv %info.19;
+        %tmp.48 = const :frontDerailleurMax;
+        %tmp.49 = canhazplz %tmp.46 %tmp.48;
+        bf %tmp.49 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_77_8_79_8_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_77_44_77_71_true:
+        %tmp.50 = lgetv %info.19;
+        %tmp.51 = as %tmp.50 { (interface { var frontDerailleurMax; }) };
+        %tmp.52 = getv %tmp.51 :frontDerailleurMax;
+        %tmp.53 = null;
+        %tmp.54 = ne %tmp.52 %tmp.53;
+        push %tmp.54;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_77_44_77_71_end:
+        %tmp.55 = phi [%tmp.49 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_77_12_77_71_begin] [%tmp.54 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_77_44_77_71_true] [%tmp.55 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_77_44_77_71_end];
+        bf %tmp.55 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_77_8_79_8_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_77_8_79_8_if_true:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_77_77_79_8_start:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 78 12 ]
+        %tmp.56 = lgetv %info.19;
+        %tmp.57 = as %tmp.56 { (interface { var frontDerailleurMax; }) };
+        %tmp.58 = getv %tmp.57 :frontDerailleurMax;
+        lputv %frontGearMax.13 %tmp.58;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_77_77_79_8_stop:
+        goto @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_77_8_79_8_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_77_8_79_8_if_end:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 80 8 ]
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_80_8_82_8_if_stmt:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_80_12_80_75_begin:
+        %tmp.60 = lgetv %info.19;
+        %tmp.62 = const :frontDerailleurIndex;
+        %tmp.63 = canhazplz %tmp.60 %tmp.62;
+        bf %tmp.63 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_80_8_82_8_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_80_46_80_75_true:
+        %tmp.64 = lgetv %info.19;
+        %tmp.65 = as %tmp.64 { (interface { var frontDerailleurIndex; }) };
+        %tmp.66 = getv %tmp.65 :frontDerailleurIndex;
+        %tmp.67 = null;
+        %tmp.68 = ne %tmp.66 %tmp.67;
+        push %tmp.68;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_80_46_80_75_end:
+        %tmp.69 = phi [%tmp.63 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_80_12_80_75_begin] [%tmp.68 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_80_46_80_75_true] [%tmp.69 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_80_46_80_75_end];
+        bf %tmp.69 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_80_8_82_8_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_80_8_82_8_if_true:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_80_81_82_8_start:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 81 12 ]
+        %tmp.70 = lgetv %info.19;
+        %tmp.71 = as %tmp.70 { (interface { var frontDerailleurIndex; }) };
+        %tmp.72 = getv %tmp.71 :frontDerailleurIndex;
+        lputv %frontGearIndex.14 %tmp.72;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_80_81_82_8_stop:
+        goto @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_80_8_82_8_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_80_8_82_8_if_end:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 83 8 ]
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_83_8_85_8_if_stmt:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_83_12_83_73_begin:
+        %tmp.74 = lgetv %info.19;
+        %tmp.76 = const :frontDerailleurSize;
+        %tmp.77 = canhazplz %tmp.74 %tmp.76;
+        bf %tmp.77 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_83_8_85_8_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_83_45_83_73_true:
+        %tmp.78 = lgetv %info.19;
+        %tmp.79 = as %tmp.78 { (interface { var frontDerailleurSize; }) };
+        %tmp.80 = getv %tmp.79 :frontDerailleurSize;
+        %tmp.81 = null;
+        %tmp.82 = ne %tmp.80 %tmp.81;
+        push %tmp.82;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_83_45_83_73_end:
+        %tmp.83 = phi [%tmp.77 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_83_12_83_73_begin] [%tmp.82 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_83_45_83_73_true] [%tmp.83 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_83_45_83_73_end];
+        bf %tmp.83 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_83_8_85_8_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_83_8_85_8_if_true:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_83_79_85_8_start:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 84 12 ]
+        %tmp.84 = lgetv %info.19;
+        %tmp.85 = as %tmp.84 { (interface { var frontDerailleurSize; }) };
+        %tmp.86 = getv %tmp.85 :frontDerailleurSize;
+        lputv %frontGearSize.15 %tmp.86;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_83_79_85_8_stop:
+        goto @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_83_8_85_8_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_83_8_85_8_if_end:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 86 8 ]
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_86_8_88_8_if_stmt:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_86_12_86_69_begin:
+        %tmp.88 = lgetv %info.19;
+        %tmp.90 = const :rearDerailleurMax;
+        %tmp.91 = canhazplz %tmp.88 %tmp.90;
+        bf %tmp.91 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_86_8_88_8_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_86_43_86_69_true:
+        %tmp.92 = lgetv %info.19;
+        %tmp.93 = as %tmp.92 { (interface { var rearDerailleurMax; }) };
+        %tmp.94 = getv %tmp.93 :rearDerailleurMax;
+        %tmp.95 = null;
+        %tmp.96 = ne %tmp.94 %tmp.95;
+        push %tmp.96;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_86_43_86_69_end:
+        %tmp.97 = phi [%tmp.91 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_86_12_86_69_begin] [%tmp.96 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_86_43_86_69_true] [%tmp.97 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_86_43_86_69_end];
+        bf %tmp.97 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_86_8_88_8_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_86_8_88_8_if_true:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_86_75_88_8_start:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 87 12 ]
+        %tmp.98 = lgetv %info.19;
+        %tmp.99 = as %tmp.98 { (interface { var rearDerailleurMax; }) };
+        %tmp.100 = getv %tmp.99 :rearDerailleurMax;
+        lputv %rearGearMax.16 %tmp.100;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_86_75_88_8_stop:
+        goto @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_86_8_88_8_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_86_8_88_8_if_end:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 89 8 ]
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_89_8_91_8_if_stmt:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_89_12_89_73_begin:
+        %tmp.102 = lgetv %info.19;
+        %tmp.104 = const :rearDerailleurIndex;
+        %tmp.105 = canhazplz %tmp.102 %tmp.104;
+        bf %tmp.105 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_89_8_91_8_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_89_45_89_73_true:
+        %tmp.106 = lgetv %info.19;
+        %tmp.107 = as %tmp.106 { (interface { var rearDerailleurIndex; }) };
+        %tmp.108 = getv %tmp.107 :rearDerailleurIndex;
+        %tmp.109 = null;
+        %tmp.110 = ne %tmp.108 %tmp.109;
+        push %tmp.110;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_89_45_89_73_end:
+        %tmp.111 = phi [%tmp.105 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_89_12_89_73_begin] [%tmp.110 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_89_45_89_73_true] [%tmp.111 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_89_45_89_73_end];
+        bf %tmp.111 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_89_8_91_8_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_89_8_91_8_if_true:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_89_79_91_8_start:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 90 12 ]
+        %tmp.112 = lgetv %info.19;
+        %tmp.113 = as %tmp.112 { (interface { var rearDerailleurIndex; }) };
+        %tmp.114 = getv %tmp.113 :rearDerailleurIndex;
+        lputv %rearGearIndex.17 %tmp.114;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_89_79_91_8_stop:
+        goto @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_89_8_91_8_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_89_8_91_8_if_end:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 92 8 ]
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_92_8_94_8_if_stmt:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_92_12_92_71_begin:
+        %tmp.116 = lgetv %info.19;
+        %tmp.118 = const :rearDerailleurSize;
+        %tmp.119 = canhazplz %tmp.116 %tmp.118;
+        bf %tmp.119 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_92_8_94_8_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_92_44_92_71_true:
+        %tmp.120 = lgetv %info.19;
+        %tmp.121 = as %tmp.120 { (interface { var rearDerailleurSize; }) };
+        %tmp.122 = getv %tmp.121 :rearDerailleurSize;
+        %tmp.123 = null;
+        %tmp.124 = ne %tmp.122 %tmp.123;
+        push %tmp.124;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_92_44_92_71_end:
+        %tmp.125 = phi [%tmp.119 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_92_12_92_71_begin] [%tmp.124 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_92_44_92_71_true] [%tmp.125 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_92_44_92_71_end];
+        bf %tmp.125 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_92_8_94_8_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_92_8_94_8_if_true:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_92_77_94_8_start:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 93 12 ]
+        %tmp.126 = lgetv %info.19;
+        %tmp.127 = as %tmp.126 { (interface { var rearDerailleurSize; }) };
+        %tmp.128 = getv %tmp.127 :rearDerailleurSize;
+        lputv %rearGearSize.18 %tmp.128;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_92_77_94_8_stop:
+        goto @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_92_8_94_8_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_92_8_94_8_if_end:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 97 8 ]
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_97_8_99_8_if_stmt:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_97_12_97_49_begin:
+        %tmp.130 = lgetv %frontGearMax.13;
+        %tmp.131 = 0;
+        %tmp.132 = eq %tmp.130 %tmp.131;
+        bt %tmp.132 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_97_8_99_8_if_true;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_97_33_97_49_false:
+        %tmp.134 = lgetv %frontGearMax.13;
+        %tmp.135 = null;
+        %tmp.136 = eq %tmp.134 %tmp.135;
+        push %tmp.136;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_97_33_97_49_end:
+        %tmp.137 = phi [%tmp.132 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_97_12_97_49_begin] [%tmp.136 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_97_33_97_49_false] [%tmp.137 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_97_33_97_49_end];
+        bf %tmp.137 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_97_8_99_8_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_97_8_99_8_if_true:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_97_55_99_8_start:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 98 12 ]
+        %tmp.138 = 2;
+        lputv %frontGearMax.13 %tmp.138;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_97_55_99_8_stop:
+        goto @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_97_8_99_8_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_97_8_99_8_if_end:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 100 8 ]
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_100_8_102_8_if_stmt:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_100_12_100_47_begin:
+        %tmp.140 = lgetv %rearGearMax.16;
+        %tmp.141 = 0;
+        %tmp.142 = eq %tmp.140 %tmp.141;
+        bt %tmp.142 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_100_8_102_8_if_true;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_100_32_100_47_false:
+        %tmp.144 = lgetv %rearGearMax.16;
+        %tmp.145 = null;
+        %tmp.146 = eq %tmp.144 %tmp.145;
+        push %tmp.146;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_100_32_100_47_end:
+        %tmp.147 = phi [%tmp.142 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_100_12_100_47_begin] [%tmp.146 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_100_32_100_47_false] [%tmp.147 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_100_32_100_47_end];
+        bf %tmp.147 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_100_8_102_8_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_100_8_102_8_if_true:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_100_53_102_8_start:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 101 12 ]
+        %tmp.148 = 11;
+        lputv %rearGearMax.16 %tmp.148;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_100_53_102_8_stop:
+        goto @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_100_8_102_8_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_100_8_102_8_if_end:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 103 8 ]
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_103_8_105_8_if_stmt:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_103_12_103_51_begin:
+        %tmp.150 = lgetv %frontGearSize.15;
+        %tmp.151 = 0;
+        %tmp.152 = eq %tmp.150 %tmp.151;
+        bt %tmp.152 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_103_8_105_8_if_true;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_103_34_103_51_false:
+        %tmp.154 = lgetv %frontGearSize.15;
+        %tmp.155 = null;
+        %tmp.156 = eq %tmp.154 %tmp.155;
+        push %tmp.156;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_103_34_103_51_end:
+        %tmp.157 = phi [%tmp.152 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_103_12_103_51_begin] [%tmp.156 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_103_34_103_51_false] [%tmp.157 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_103_34_103_51_end];
+        bf %tmp.157 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_103_8_105_8_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_103_8_105_8_if_true:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_103_57_105_8_start:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 104 12 ]
+        %tmp.158 = 42;
+        lputv %frontGearSize.15 %tmp.158;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_103_57_105_8_stop:
+        goto @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_103_8_105_8_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_103_8_105_8_if_end:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 106 8 ]
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_106_8_108_8_if_stmt:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_106_12_106_49_begin:
+        %tmp.160 = lgetv %rearGearSize.18;
+        %tmp.161 = 0;
+        %tmp.162 = eq %tmp.160 %tmp.161;
+        bt %tmp.162 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_106_8_108_8_if_true;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_106_33_106_49_false:
+        %tmp.164 = lgetv %rearGearSize.18;
+        %tmp.165 = null;
+        %tmp.166 = eq %tmp.164 %tmp.165;
+        push %tmp.166;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_106_33_106_49_end:
+        %tmp.167 = phi [%tmp.162 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_106_12_106_49_begin] [%tmp.166 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_106_33_106_49_false] [%tmp.167 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_106_33_106_49_end];
+        bf %tmp.167 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_106_8_108_8_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_106_8_108_8_if_true:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_106_55_108_8_start:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 107 12 ]
+        %tmp.168 = 15;
+        lputv %rearGearSize.18 %tmp.168;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_106_55_108_8_stop:
+        goto @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_106_8_108_8_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_106_8_108_8_if_end:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 111 8 ]
+        [ "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_start" "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_stop" ]
+        %rectWidth.20 = local;
+        %tmp.170 = lgetv %width.6;
+        %tmp.172 = lgetv %RECT_SPACING.3;
+        %tmp.174 = lgetv %rearGearMax.16;
+        %tmp.175 = 1;
+        %tmp.176 = add %tmp.174 %tmp.175;
+        %tmp.177 = mul %tmp.172 %tmp.176;
+        %tmp.178 = sub %tmp.170 %tmp.177;
+        %tmp.180 = lgetv %rearGearMax.16;
+        %tmp.181 = div %tmp.178 %tmp.180;
+        lputv %rectWidth.20 %tmp.181;
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 115 8 ]
+        [ "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_start" "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_stop" ]
+        %frontStartX.21 = local;
+        %tmp.183 = lgetv %width.6;
+        %tmp.185 = lgetv %rectWidth.20;
+        %tmp.187 = lgetv %RECT_SPACING.3;
+        %tmp.188 = add %tmp.185 %tmp.187;
+        %tmp.190 = lgetv %frontGearMax.13;
+        %tmp.191 = mul %tmp.188 %tmp.190;
+        %tmp.192 = sub %tmp.183 %tmp.191;
+        %tmp.194 = lgetv %RECT_SPACING.3;
+        %tmp.195 = add %tmp.192 %tmp.194;
+        lputv %frontStartX.21 %tmp.195;
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 117 8 ]
+        for @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_117_8_131_8_for_test @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_117_8_131_8_for_incr @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_117_8_131_8_for_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_117_8_131_8_for_init:
+        [ "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_117_8_131_8_for_begin" "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_117_8_131_8_for_end" ]
+        %i.22 = local;
+        %tmp.196 = 0;
+        lputv %i.22 %tmp.196;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_117_8_131_8_for_test:
+        %tmp.198 = lgetv %i.22;
+        %tmp.200 = lgetv %frontGearMax.13;
+        %tmp.201 = lt %tmp.198 %tmp.200;
+        bf %tmp.201 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_117_8_131_8_for_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_117_8_131_8_for_begin:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_117_47_131_8_start:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 118 12 ]
+        [ "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_117_47_131_8_start" "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_117_47_131_8_stop" ]
+        %x.23 = local;
+        %tmp.203 = lgetv %frontStartX.21;
+        %tmp.205 = lgetv %i.22;
+        %tmp.207 = lgetv %rectWidth.20;
+        %tmp.209 = lgetv %RECT_SPACING.3;
+        %tmp.210 = add %tmp.207 %tmp.209;
+        %tmp.211 = mul %tmp.205 %tmp.210;
+        %tmp.212 = add %tmp.203 %tmp.211;
+        lputv %x.23 %tmp.212;
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 119 12 ]
+        [ "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_117_47_131_8_start" "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_117_47_131_8_stop" ]
+        %y.24 = local;
+        %tmp.213 = 0;
+        lputv %y.24 %tmp.213;
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 122 12 ]
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_122_12_130_12_if_stmt:
+        %tmp.215 = lgetv %i.22;
+        %tmp.216 = 1;
+        %tmp.217 = add %tmp.215 %tmp.216;
+        %tmp.219 = lgetv %frontGearIndex.14;
+        %tmp.220 = eq %tmp.217 %tmp.219;
+        bf %tmp.220 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_122_12_130_12_if_false;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_122_12_130_12_if_true:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_122_41_126_12_start:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 124 16 ]
+        %tmp.221 = lgetv %dc;
+        %tmp.222 = getv function %tmp.221 :setColor;
+        %tmp.224 = lgetv %colorSelected.10;
+        %tmp.226 = lgetv %colorBackground.8;
+        invoke %tmp.221 %tmp.222(%tmp.224, %tmp.226);
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 125 16 ]
+        %tmp.227 = lgetv %dc;
+        %tmp.228 = getv function %tmp.227 :fillRectangle;
+        %tmp.230 = lgetv %x.23;
+        %tmp.232 = lgetv %y.24;
+        %tmp.234 = lgetv %rectWidth.20;
+        %tmp.236 = lgetv %RECT_HEIGHT.2;
+        invoke %tmp.227 %tmp.228(%tmp.230, %tmp.232, %tmp.234, %tmp.236);
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_122_41_126_12_stop:
+        goto @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_122_12_130_12_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_122_12_130_12_if_false:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_126_19_130_12_start:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 128 16 ]
+        %tmp.237 = lgetv %dc;
+        %tmp.238 = getv function %tmp.237 :setColor;
+        %tmp.240 = lgetv %colorBorder.9;
+        %tmp.242 = lgetv %colorBackground.8;
+        invoke %tmp.237 %tmp.238(%tmp.240, %tmp.242);
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 129 16 ]
+        %tmp.243 = lgetv %dc;
+        %tmp.244 = getv function %tmp.243 :drawRectangle;
+        %tmp.246 = lgetv %x.23;
+        %tmp.248 = lgetv %y.24;
+        %tmp.250 = lgetv %rectWidth.20;
+        %tmp.252 = lgetv %RECT_HEIGHT.2;
+        invoke %tmp.243 %tmp.244(%tmp.246, %tmp.248, %tmp.250, %tmp.252);
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_126_19_130_12_stop:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_122_12_130_12_if_end:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_117_47_131_8_stop:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_117_8_131_8_for_incr:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 117 ]
+        %tmp.255 = lgetv %i.22;
+        %tmp.256 = add %tmp.255 1;
+        lputv %i.22 %tmp.256;
+        goto @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_117_8_131_8_for_test;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_117_8_131_8_for_end:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 136 8 ]
+        for @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_136_8_150_8_for_test @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_136_8_150_8_for_incr @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_136_8_150_8_for_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_136_8_150_8_for_init:
+        [ "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_136_8_150_8_for_begin" "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_136_8_150_8_for_end" ]
+        %i.25 = local;
+        %tmp.257 = 0;
+        lputv %i.25 %tmp.257;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_136_8_150_8_for_test:
+        %tmp.259 = lgetv %i.25;
+        %tmp.261 = lgetv %rearGearMax.16;
+        %tmp.262 = lt %tmp.259 %tmp.261;
+        bf %tmp.262 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_136_8_150_8_for_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_136_8_150_8_for_begin:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_136_46_150_8_start:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 137 12 ]
+        [ "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_136_46_150_8_start" "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_136_46_150_8_stop" ]
+        %x.26 = local;
+        %tmp.264 = lgetv %RECT_SPACING.3;
+        %tmp.266 = lgetv %i.25;
+        %tmp.268 = lgetv %rectWidth.20;
+        %tmp.270 = lgetv %RECT_SPACING.3;
+        %tmp.271 = add %tmp.268 %tmp.270;
+        %tmp.272 = mul %tmp.266 %tmp.271;
+        %tmp.273 = add %tmp.264 %tmp.272;
+        lputv %x.26 %tmp.273;
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 138 12 ]
+        [ "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_136_46_150_8_start" "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_136_46_150_8_stop" ]
+        %y.27 = local;
+        %tmp.275 = lgetv %RECT_HEIGHT.2;
+        %tmp.276 = 5;
+        %tmp.277 = add %tmp.275 %tmp.276;
+        lputv %y.27 %tmp.277;
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 141 12 ]
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_141_12_149_12_if_stmt:
+        %tmp.279 = lgetv %i.25;
+        %tmp.280 = 1;
+        %tmp.281 = add %tmp.279 %tmp.280;
+        %tmp.283 = lgetv %rearGearIndex.17;
+        %tmp.284 = eq %tmp.281 %tmp.283;
+        bf %tmp.284 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_141_12_149_12_if_false;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_141_12_149_12_if_true:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_141_40_145_12_start:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 143 16 ]
+        %tmp.285 = lgetv %dc;
+        %tmp.286 = getv function %tmp.285 :setColor;
+        %tmp.288 = lgetv %colorSelected.10;
+        %tmp.290 = lgetv %colorBackground.8;
+        invoke %tmp.285 %tmp.286(%tmp.288, %tmp.290);
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 144 16 ]
+        %tmp.291 = lgetv %dc;
+        %tmp.292 = getv function %tmp.291 :fillRectangle;
+        %tmp.294 = lgetv %x.26;
+        %tmp.296 = lgetv %y.27;
+        %tmp.298 = lgetv %rectWidth.20;
+        %tmp.300 = lgetv %RECT_HEIGHT.2;
+        invoke %tmp.291 %tmp.292(%tmp.294, %tmp.296, %tmp.298, %tmp.300);
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_141_40_145_12_stop:
+        goto @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_141_12_149_12_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_141_12_149_12_if_false:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_145_19_149_12_start:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 147 16 ]
+        %tmp.301 = lgetv %dc;
+        %tmp.302 = getv function %tmp.301 :setColor;
+        %tmp.304 = lgetv %colorBorder.9;
+        %tmp.306 = lgetv %colorBackground.8;
+        invoke %tmp.301 %tmp.302(%tmp.304, %tmp.306);
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 148 16 ]
+        %tmp.307 = lgetv %dc;
+        %tmp.308 = getv function %tmp.307 :drawRectangle;
+        %tmp.310 = lgetv %x.26;
+        %tmp.312 = lgetv %y.27;
+        %tmp.314 = lgetv %rectWidth.20;
+        %tmp.316 = lgetv %RECT_HEIGHT.2;
+        invoke %tmp.307 %tmp.308(%tmp.310, %tmp.312, %tmp.314, %tmp.316);
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_145_19_149_12_stop:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_141_12_149_12_if_end:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_136_46_150_8_stop:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_136_8_150_8_for_incr:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 136 ]
+        %tmp.319 = lgetv %i.25;
+        %tmp.320 = add %tmp.319 1;
+        lputv %i.25 %tmp.320;
+        goto @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_136_8_150_8_for_test;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_136_8_150_8_for_end:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 154 8 ]
+        [ "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_start" "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_stop" ]
+        %ratioY.28 = local;
+        %tmp.321 = 2;
+        %tmp.323 = lgetv %RECT_HEIGHT.2;
+        %tmp.324 = 5;
+        %tmp.325 = add %tmp.323 %tmp.324;
+        %tmp.326 = mul %tmp.321 %tmp.325;
+        %tmp.327 = 5;
+        %tmp.328 = add %tmp.326 %tmp.327;
+        lputv %ratioY.28 %tmp.328;
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 157 8 ]
+        %tmp.329 = lgetv %dc;
+        %tmp.330 = getv function %tmp.329 :setColor;
+        %tmp.332 = lgetv %colorText.12;
+        %tmp.334 = lgetv %colorBackground.8;
+        invoke %tmp.329 %tmp.330(%tmp.332, %tmp.334);
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 158 8 ]
+        [ "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_start" "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_stop" ]
+        %ratioText.29 = local;
+        %tmp.336 = lgetv %frontGearSize.15;
+        %tmp.337 = " / ";
+        %tmp.338 = add %tmp.336 %tmp.337;
+        %tmp.340 = lgetv %rearGearSize.18;
+        %tmp.341 = add %tmp.338 %tmp.340;
+        lputv %ratioText.29 %tmp.341;
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 159 8 ]
+        %tmp.342 = lgetv %dc;
+        %tmp.343 = getv function %tmp.342 :drawText;
+        %tmp.345 = lgetv %width.6;
+        %tmp.346 = 2;
+        %tmp.347 = div %tmp.345 %tmp.346;
+        %tmp.349 = lgetv %ratioY.28;
+        %tmp.350 = getm $.Toybox.Graphics;
+        %tmp.351 = getv %tmp.350 :FONT_MEDIUM;
+        %tmp.353 = lgetv %ratioText.29;
+        %tmp.354 = getm $.Toybox.Graphics;
+        %tmp.355 = getv %tmp.354 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.342 %tmp.343(%tmp.347, %tmp.349, %tmp.351, %tmp.353, %tmp.355);
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 162 8 ]
+        [ "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_start" "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_stop" ]
+        %debugY.30 = local;
+        %tmp.357 = lgetv %ratioY.28;
+        %tmp.359 = lgetv %TEXT_HEIGHT.5;
+        %tmp.360 = add %tmp.357 %tmp.359;
+        %tmp.361 = 10;
+        %tmp.362 = add %tmp.360 %tmp.361;
+        lputv %debugY.30 %tmp.362;
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 165 8 ]
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_165_8_184_8_if_stmt:
+        %tmp.364 = lgetv %DEBUG.1;
+        bf %tmp.364 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_165_8_184_8_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_165_8_184_8_if_true:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_165_19_184_8_start:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 166 12 ]
+        %tmp.365 = lgetv %dc;
+        %tmp.366 = getv function %tmp.365 :setColor;
+        %tmp.368 = lgetv %colorText.12;
+        %tmp.370 = lgetv %colorBackground.8;
+        invoke %tmp.365 %tmp.366(%tmp.368, %tmp.370);
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 169 12 ]
+        [ "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_165_19_184_8_start" "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_165_19_184_8_stop" ]
+        %debugText.31 = local;
+        %tmp.371 = "F: ";
+        %tmp.373 = lgetv %frontGearIndex.14;
+        %tmp.374 = add %tmp.371 %tmp.373;
+        %tmp.375 = "/";
+        %tmp.376 = add %tmp.374 %tmp.375;
+        %tmp.378 = lgetv %frontGearMax.13;
+        %tmp.379 = add %tmp.376 %tmp.378;
+        %tmp.380 = " R: ";
+        %tmp.381 = add %tmp.379 %tmp.380;
+        %tmp.383 = lgetv %rearGearIndex.17;
+        %tmp.384 = add %tmp.381 %tmp.383;
+        %tmp.385 = "/";
+        %tmp.386 = add %tmp.384 %tmp.385;
+        %tmp.388 = lgetv %rearGearMax.16;
+        %tmp.389 = add %tmp.386 %tmp.388;
+        lputv %debugText.31 %tmp.389;
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 171 12 ]
+        %tmp.390 = lgetv %dc;
+        %tmp.391 = getv function %tmp.390 :drawText;
+        %tmp.393 = lgetv %width.6;
+        %tmp.394 = 2;
+        %tmp.395 = div %tmp.393 %tmp.394;
+        %tmp.397 = lgetv %debugY.30;
+        %tmp.398 = getm $.Toybox.Graphics;
+        %tmp.399 = getv %tmp.398 :FONT_TINY;
+        %tmp.401 = lgetv %debugText.31;
+        %tmp.402 = getm $.Toybox.Graphics;
+        %tmp.403 = getv %tmp.402 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.390 %tmp.391(%tmp.395, %tmp.397, %tmp.399, %tmp.401, %tmp.403);
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 174 12 ]
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_174_12_179_12_if_stmt:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_174_16_174_52_begin:
+        %tmp.405 = lgetv %frontGearSize.15;
+        %tmp.406 = 0;
+        %tmp.407 = gt %tmp.405 %tmp.406;
+        bf %tmp.407 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_174_12_179_12_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_174_37_174_52_true:
+        %tmp.409 = lgetv %rearGearSize.18;
+        %tmp.410 = 0;
+        %tmp.411 = gt %tmp.409 %tmp.410;
+        push %tmp.411;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_174_37_174_52_end:
+        %tmp.412 = phi [%tmp.407 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_174_16_174_52_begin] [%tmp.411 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_174_37_174_52_true] [%tmp.412 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_174_37_174_52_end];
+        bf %tmp.412 @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_174_12_179_12_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_174_12_179_12_if_true:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_174_55_179_12_start:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 175 16 ]
+        %tmp.413 = lgetv %debugY.30;
+        %tmp.415 = lgetv %TEXT_HEIGHT.5;
+        %tmp.416 = 2;
+        %tmp.417 = add %tmp.415 %tmp.416;
+        %tmp.418 = add %tmp.413 %tmp.417;
+        lputv %debugY.30 %tmp.418;
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 176 16 ]
+        [ "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_174_55_179_12_start" "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_174_55_179_12_stop" ]
+        %ratio.32 = local;
+        %tmp.419 = lgetv %frontGearSize.15;
+        %tmp.420 = getv function %tmp.419 :toFloat;
+        %tmp.421 = invoke %tmp.419 %tmp.420();
+        %tmp.422 = lgetv %rearGearSize.18;
+        %tmp.423 = getv function %tmp.422 :toFloat;
+        %tmp.424 = invoke %tmp.422 %tmp.423();
+        %tmp.425 = div %tmp.421 %tmp.424;
+        lputv %ratio.32 %tmp.425;
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 177 16 ]
+        [ "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_174_55_179_12_start" "C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_174_55_179_12_stop" ]
+        %ratioCalcText.33 = local;
+        %tmp.426 = "Ratio: ";
+        %tmp.427 = lgetv %ratio.32;
+        %tmp.428 = getv function %tmp.427 :format;
+        %tmp.429 = "%.2f";
+        %tmp.430 = invoke %tmp.427 %tmp.428(%tmp.429);
+        %tmp.431 = add %tmp.426 %tmp.430;
+        lputv %ratioCalcText.33 %tmp.431;
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 178 16 ]
+        %tmp.432 = lgetv %dc;
+        %tmp.433 = getv function %tmp.432 :drawText;
+        %tmp.435 = lgetv %width.6;
+        %tmp.436 = 2;
+        %tmp.437 = div %tmp.435 %tmp.436;
+        %tmp.439 = lgetv %debugY.30;
+        %tmp.440 = getm $.Toybox.Graphics;
+        %tmp.441 = getv %tmp.440 :FONT_TINY;
+        %tmp.443 = lgetv %ratioCalcText.33;
+        %tmp.444 = getm $.Toybox.Graphics;
+        %tmp.445 = getv %tmp.444 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.432 %tmp.433(%tmp.437, %tmp.439, %tmp.441, %tmp.443, %tmp.445);
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_174_55_179_12_stop:
+        goto @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_174_12_179_12_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_174_12_179_12_if_end:
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 182 12 ]
+        %tmp.446 = lgetv %debugY.30;
+        %tmp.448 = lgetv %TEXT_HEIGHT.5;
+        %tmp.449 = 2;
+        %tmp.450 = add %tmp.448 %tmp.449;
+        %tmp.451 = add %tmp.446 %tmp.450;
+        lputv %debugY.30 %tmp.451;
+[ "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc" 183 12 ]
+        %tmp.452 = lgetv %dc;
+        %tmp.453 = getv function %tmp.452 :drawText;
+        %tmp.455 = lgetv %width.6;
+        %tmp.456 = 2;
+        %tmp.457 = div %tmp.455 %tmp.456;
+        %tmp.459 = lgetv %debugY.30;
+        %tmp.460 = getm $.Toybox.Graphics;
+        %tmp.461 = getv %tmp.460 :FONT_TINY;
+        %tmp.462 = "Batt: N/A";
+        %tmp.463 = getm $.Toybox.Graphics;
+        %tmp.464 = getv %tmp.463 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.452 %tmp.453(%tmp.457, %tmp.459, %tmp.461, %tmp.462, %tmp.464);
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_165_19_184_8_stop:
+        goto @C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_165_8_184_8_if_end;
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_165_8_184_8_if_end:
+C_Users_luc_Documents_GitHub_VisualGears_source_VisualGearsField_mc_44_30_185_4_stop:
+    }
+}
+[ @file = "C:\Users\luc\Documents\GitHub\VisualGears\source\VisualGearsField.mc"; @line = 1; ]
+<init> {
+}
