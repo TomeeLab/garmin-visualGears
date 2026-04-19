@@ -5,206 +5,283 @@ using Toybox.Lang;
 using Toybox.Activity;
 using Toybox.Application;
 
+/**
+ * VisualGearsField - Garmin Edge 540 Gear Visualization DataField
+ * 
+ * Zobrazuje vizuálnu reprezentáciu prevodoviek na kolese
+ * - Zadné prevodovky: 12 barov (najmenší = najvyšší, najväčší = najnižší)
+ * - Predné prevodovky: 2 bary (menší = nižší, väčší = vyšší)
+ * 
+ * Cross-chain detekcia s farebným bliknutím:
+ * - Malý predný (1) + 3 najväčšie zadné (10,11,12) = WARNING
+ * - Veľký predný (2) + 4 najmenšie zadné (1,2,3,4) = WARNING
+ */
 class VisualGearsField extends WatchUi.DataField {
-
-    // Class variables
+    
+    // Aktuálne zvolené prevodovky (z ANT+ senzora)
     hidden var frontGear = null;
     hidden var rearGear = null;
     
-    // Constructor
+    // Blikanie pre cross-chain warning (toggle state)
+    hidden var blinkState = false;
+    hidden var lastToggleTime = 0;
+    
+    /**
+     * Inicializácia DataField
+     * Volané pri štarte aplikácie
+     */
     function initialize() {
         DataField.initialize();
     }
-
-    // Called when data is updated
+    
+    /**
+     * Výpočet - volá sa periodicky, keď sa zmenia údaje o aktivite
+     * 
+     * @param info Activity.Info objekt s informáciami o prevodovkách
+     * @return true = údaje boli spracované
+     */
     function compute(info) {
-        // Access derailleur information
+        // Prečítaj index predného prevodníka (1 = malý, 2 = veľký)
         if (info has :frontDerailleurIndex && info.frontDerailleurIndex != null) {
             frontGear = info.frontDerailleurIndex;
+        } else {
+            frontGear = null;
         }
+        
+        // Prečítaj index zadného prevodníka (1-12)
         if (info has :rearDerailleurIndex && info.rearDerailleurIndex != null) {
             rearGear = info.rearDerailleurIndex;
         }
         
-        // Return true to indicate data was processed
         return true;
     }
     
-    // Update the display
+    /**
+     * Aktualizácia blikania
+     * Toggleuje blinkState každých 500ms pre efekt bliknutia
+     */
+    function updateBlink() {
+        var now = System.getTimer();
+        
+        // Ak uplynulo > 500ms, prepni blikanie
+        if (now - lastToggleTime > 500) {
+            blinkState = !blinkState;
+            lastToggleTime = now;
+        }
+    }
+    
+    /**
+     * Detekcia cross-chain kombinácií (zlé prevody)
+     * 
+     * Cross-chain = mechanicky nevhodná kombinacia predného a zadného prevodníka
+     * Spôsobuje:
+     * - Zvýšené trenie v reťazi
+     * - Nerovnomerné nosenie
+     * - Neefektívnu jazdu
+     * 
+     * @param front Index predného prevodníka (1=malý/33T, 2=veľký/50T)
+     * @param rear Index zadného prevodníka (1=malý/10T, 12=veľký/52T)
+     * @param rearMax Maximálny počet zadných prevodníkov (zvyčajne 12)
+     * @return true = cross-chain detekovaný, false = OK
+     */
+    function isCrossChain(front, rear, rearMax) {
+        
+        // Ak nie sú dostupné indexy, nemožno určiť
+        if (front == null || rear == null) {
+            return false;
+        }
+        
+        // ZLÝ PREVOD #1: MALÝ vpredu (1) + 3 NAJVÄČŠIE vzadu (10, 11, 12)
+        // Reťaz je príliš diagonálna (malý ring + veľké ozubice)
+        // Rear index > (rearMax - 4) znamená 3 najväčšie
+        // Pre 12 gears: rear > 8 = indexy 9,10,11,12 (ale chceme iba 10,11,12)
+        // Preto: rear > (rearMax - 4) = rear > 8 = 9,10,11,12... upraviť na rear > (rearMax - 3) by bolo 10,11,12
+        if (front == 1 && rear > (rearMax - 4)) {
+            return true;
+        }
+        
+        // ZLÝ PREVOD #2: VEĽKÝ vpredu (2) + 4 NAJMENŠIE vzadu (1, 2, 3, 4)
+        // Reťaz je príliš diagonálna (veľký ring + malé ozubice)
+        if (front == 2 && rear <= 3) {
+            return true;
+        }
+        
+        return false;
+    }
+    
+    /**
+     * Aktualizácia displeja
+     * Volá sa každú sekundu, keď je DataField viditeľný
+     * 
+     * @param dc Graphics.Dc - grafický kontext na kreslenie
+     */
     function onUpdate(dc) {
-        // Clear the display
+        
+        // Aktualizuj blikanie (pre warning)
+        updateBlink();
+        
+        // Vymaz displej (čierny podklad, potom biely)
         dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_BLACK);
         dc.clear();
         
-        // Draw gear information display
+        // Nakresli prevodovky
         drawGearInfo(dc);
     }
     
-   // Draw gear information display with rectangles
-function drawGearInfo(dc) {
-    // Constants for display settings
-    var DEBUG = false;                   // Set debug information to false
-    var RECT_HEIGHT = 30;                // Height of gear rectangles
-    var RECT_SPACING = 4;                // Spacing between rectangles
-    var RECT_BORDER = 2;                 // Border thickness
-    var TEXT_HEIGHT = 15;                // Height for debug text
-    var MARGIN = 8;                      // Margin around the edges
-    
-    // Device-specific offsets
-    var deviceOffset = 0;
-    
-    // Detect device and apply appropriate offset
-    var deviceType = System.getDeviceSettings().partNumber;
-    if (deviceType != null) {
-        if (deviceType.find("1050") != null) {
-            deviceOffset = 6;  // Edge 1050 needs +6 offset
-        } else if (deviceType.find("540") != null) {
-            deviceOffset = 3;  // Edge 540 needs +3 offset
-        } else {
-            deviceOffset = 6;
-        }
-        // Add more device-specific offsets as needed
-    }
-    
-    // Get display dimensions
-    var width = dc.getWidth();
-    var height = dc.getHeight();
-    
-    // Set colors - updated for white background and black rectangles
-    var colorBackground = Graphics.COLOR_WHITE;
-    var colorBorder = Graphics.COLOR_BLACK;
-    var colorSelected = Graphics.COLOR_BLACK;
-    var colorUnselected = Graphics.COLOR_WHITE;
-    var colorText = Graphics.COLOR_BLACK;
-    
-    // Fill background with white
-    dc.setColor(colorBackground, colorBackground);
-    dc.fillRectangle(0, 0, width, height);
-    
-    // ----- Get gear information -----
-    var frontGearMax = 0;
-    var frontGearIndex = 0;
-    var frontGearSize = 0;  // Number of teeth on front gear
-    var rearGearMax = 0;
-    var rearGearIndex = 0;
-    var rearGearSize = 0;  // Number of teeth on rear gear
-    
-    // Get the gear information from Activity Info
-    var info = Activity.getActivityInfo();
-    if (info has :frontDerailleurMax && info.frontDerailleurMax != null) {
-        frontGearMax = info.frontDerailleurMax;
-    }
-    if (info has :frontDerailleurIndex && info.frontDerailleurIndex != null) {
-        frontGearIndex = info.frontDerailleurIndex;
-    }
-    if (info has :frontDerailleurSize && info.frontDerailleurSize != null) {
-        frontGearSize = info.frontDerailleurSize;
-    }
-    if (info has :rearDerailleurMax && info.rearDerailleurMax != null) {
-        rearGearMax = info.rearDerailleurMax;
-    }
-    if (info has :rearDerailleurIndex && info.rearDerailleurIndex != null) {
-        rearGearIndex = info.rearDerailleurIndex;
-    }
-    if (info has :rearDerailleurSize && info.rearDerailleurSize != null) {
-        rearGearSize = info.rearDerailleurSize;
-    }
-    
-    // Fallback values if no data available (common setups)
-    if (frontGearMax == 0 || frontGearMax == null) {
-        frontGearMax = 2;
-    }
-    if (rearGearMax == 0 || rearGearMax == null) {
-        rearGearMax = 11;
-    }
-    if (frontGearSize == 0 || frontGearSize == null) {
-        frontGearSize = 42;  // Common chainring size
-    }
-    if (rearGearSize == 0 || rearGearSize == null) {
-        rearGearSize = 15;  // Common cog size
-    }
-    
-    // Calculate usable width accounting for margins
-    var usableWidth = width - (2 * MARGIN);
-    
-    // Calculate rectangle width for rear gears (base calculation)
-    var rearRectWidth = (usableWidth - (RECT_SPACING * (rearGearMax - 1))) / rearGearMax;
-    
-    // Calculate rectangle width for front gears (same calculation)
-    var frontRectWidth = rearRectWidth;
-    
-    // ----- Draw Rear Gears (bottom row, full width) -----
-    // Draw rear gear rectangles - full width with margins
-    for (var i = 0; i < rearGearMax; i++) {
-        var x = MARGIN + i * (rearRectWidth + RECT_SPACING);
-        var y = MARGIN + RECT_HEIGHT + 5;
+    /**
+     * Kreslenie vizualizácie prevodoviek
+     * 
+     * Layout:
+     * - VZADU: 12 barov zľava doprava (najmenší = najvyšší, najväčší = najnižší)
+     * - VPREDU: 2 bary navrchu vpravo (malý = nižší, veľký = vyšší)
+     * - BLIKANIE: Pri cross-chain blikajú bary farebne (bez zmeny pozadia)
+     * 
+     * @param dc Graphics.Dc - grafický kontext
+     */
+    function drawGearInfo(dc) {
         
-        // Selected gear gets filled, others get border only
-        if (i + 1 == rearGearIndex) {  // +1 because indexes are 1-based
-            // Draw selected gear (filled rectangle)
-            dc.setColor(colorSelected, colorBackground);
-            dc.fillRectangle(x, y, rearRectWidth, RECT_HEIGHT);
-        } else {
-            // Draw unselected gear (border only)
-            dc.setColor(colorBorder, colorBackground);
-            dc.drawRectangle(x, y, rearRectWidth, RECT_HEIGHT);
-        }
-    }
-    
-    // ----- Draw Front Gears (top row, right-aligned) -----
-    // Calculate the total width that will be used by front gear rectangles
-    var frontTotalWidth = (frontGearMax * frontRectWidth) + ((frontGearMax - 1) * RECT_SPACING);
-    
-    // Calculate starting X to center the front gear row with device-specific offset
-    var frontStartX = width - MARGIN - frontTotalWidth - deviceOffset;
-    
-    // Draw front gear rectangles
-    for (var i = 0; i < frontGearMax; i++) {
-        var x = frontStartX + i * (frontRectWidth + RECT_SPACING);
-        var y = MARGIN;  // Add top margin
+        // ----- KONŠTANTY POZICIÍ -----
+        var MARGIN_BOTTOM = 2;      // Spodný okraj
+        var MARGIN_TOP = 2;         // Horný okraj
+        var MARGIN_SIDES = 1;       // Bočné okraje
         
-        // Selected gear gets filled, others get border only
-        if (i + 1 == frontGearIndex) {  // +1 because indexes are 1-based
-            // Draw selected gear (filled rectangle)
-            dc.setColor(colorSelected, colorBackground);
-            dc.fillRectangle(x, y, frontRectWidth, RECT_HEIGHT);
-        } else {
-            // Draw unselected gear (border only)
-            dc.setColor(colorBorder, colorBackground);
-            dc.drawRectangle(x, y, frontRectWidth, RECT_HEIGHT);
-        }
-    }
-    
-    // ----- Draw Gear Ratio Text -----
-    // Position for gear ratio text (below the rectangles)
-    var ratioY = MARGIN + 2 * (RECT_HEIGHT + 5) + 5;
-    
-    // Draw gear ratio text
-    dc.setColor(colorText, colorBackground);
-    var ratioText = frontGearSize + " / " + rearGearSize;
-    dc.drawText(width/2, ratioY, Graphics.FONT_MEDIUM, ratioText, Graphics.TEXT_JUSTIFY_CENTER);
-    
-    // Debug section has been retained but will not execute since DEBUG = false
-    if (DEBUG) {
-        var debugY = ratioY + TEXT_HEIGHT + 10;
-        dc.setColor(colorText, colorBackground);
+        // Výšky predných barov (fixné, bez zmeny)
+        var FRONT_HEIGHT_SMALL = 20;  // Malý predný (1) = 20px vysoký
+        var FRONT_HEIGHT_LARGE = 30;  // Veľký predný (2) = 30px vysoký
         
-        // Display gear indexes and counts
-        var debugText = "F: " + frontGearIndex + "/" + frontGearMax + 
-                       " R: " + rearGearIndex + "/" + rearGearMax;
-        dc.drawText(width/2, debugY, Graphics.FONT_TINY, debugText, Graphics.TEXT_JUSTIFY_CENTER);
+        // ----- ZÍSKAJ ROZMERY -----
+        var width = dc.getWidth();      // Šírka poľa (~122px)
+        var height = dc.getHeight();    // Výška poľa (~53px)
         
-        // If available, calculate and show gear ratio
-        if (frontGearSize > 0 && rearGearSize > 0) {
-            debugY += TEXT_HEIGHT + 2;
-            var ratio = frontGearSize.toFloat() / rearGearSize.toFloat();
-            var ratioCalcText = "Ratio: " + ratio.format("%.2f");
-            dc.drawText(width/2, debugY, Graphics.FONT_TINY, ratioCalcText, Graphics.TEXT_JUSTIFY_CENTER);
+        // ----- ZÍSKAJ DÁTA Z AKTIVTY -----
+        var info = Activity.getActivityInfo();
+        
+        // Predný: max počet (zvyčajne 2), aktuálny index
+        var frontGearMax = (info has :frontDerailleurMax && info.frontDerailleurMax != null) ? info.frontDerailleurMax : 0;
+        var frontGearIndex = (info has :frontDerailleurIndex && info.frontDerailleurIndex != null) ? info.frontDerailleurIndex : null;
+        
+        // Zadný: max počet (zvyčajne 12), aktuálny index
+        var rearGearMax = (info has :rearDerailleurMax && info.rearDerailleurMax != null) ? info.rearDerailleurMax : 12;
+        var rearGearIndex = (info has :rearDerailleurIndex && info.rearDerailleurIndex != null) ? info.rearDerailleurIndex : 0;
+        
+        // ----- DETEKCIA CROSS-CHAIN -----
+        var warning = isCrossChain(frontGearIndex, rearGearIndex, rearGearMax);
+        
+        // ----- POZADIE -----
+        // Vždy BIELE pozadie (nie oranžové)
+        var bgColor = Graphics.COLOR_WHITE;
+        dc.setColor(bgColor, bgColor);
+        dc.fillRectangle(0, 0, width, height);
+        
+        // ----- FARBY NA KRESLENIE BAROV -----
+        var colorBorder = Graphics.COLOR_BLACK;      // Obrys (neaktívne bary)
+        var colorSelected = Graphics.COLOR_BLACK;    // Vyplnenie aktívneho baru (normálne)
+        var colorWarning = Graphics.COLOR_RED;       // ČERVENÁ pri cross-chain bliknutí!
+        
+        // ----- KRESLENIE ZADNÝCH PREVODNÍKOV -----
+        // Úloha: Vyzerajú ako histogram - najmenší = najvyšší, najväčší = najnižší
+        
+        var rearBaseY = height - MARGIN_BOTTOM;      // Dolný bod barov
+        var totalRearHeight = rearBaseY - MARGIN_TOP; // Dostupná výška
+        
+        var totalRearWidth = width - 2 * MARGIN_SIDES; // Dostupná šírka
+        var rearBarWidth = totalRearWidth / rearGearMax; // Šírka jedného baru
+        
+        for (var i = 0; i < rearGearMax; i++) {
+            
+            // Pozícia X tohoto baru
+            var x = MARGIN_SIDES + i * rearBarWidth;
+            var barWidth = rearBarWidth;
+            if (barWidth < 1) { barWidth = 1; }
+            
+            // ----- VÝPOČET VÝŠKY BARU -----
+            // Logika: čím menší index (vzadu), tým vyšší bar
+            // reversedIndex konvertuje: i=0 (najmenší) -> reversedIndex=11 (100%)
+            var reversedIndex = (rearGearMax - 1) - i;
+            var ratio = reversedIndex.toFloat() / (rearGearMax - 1).toFloat();
+            
+            // Scaling: 25% až 100% (aby boli všetky viditeľné)
+            var scaled = 0.25f + (ratio * 0.75f);
+            var barHeight = (totalRearHeight.toFloat() * scaled).toNumber();
+            
+            var y = rearBaseY - barHeight;
+            
+            // ----- KRESLENIE BARU -----
+            // Prvé: vymaž farbou pozadia
+            dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_WHITE);
+            dc.fillRectangle(x, y, barWidth, barHeight);
+            
+            // Potom: nakresli bar (vyplnený = aktívny, obrys = neaktívny)
+            if ((i + 1) == rearGearIndex) {
+                // AKTÍVNY bar = VYPLNENÝ
+                // Pri warning a blik: ČERVENÁ, inak čierna
+                var selectedColor = colorSelected;
+                if (warning && blinkState) {
+                    selectedColor = colorWarning;  // ČERVENÁ pri blikaní
+                }
+                dc.setColor(selectedColor, Graphics.COLOR_WHITE);
+                dc.fillRectangle(x, y, barWidth, barHeight);
+            } else {
+                // NEAKTÍVNY bar = OBRYS
+                // Pri warning a blik: ČERVENÁ, inak čierna
+                var borderColor = colorBorder;
+                if (warning && blinkState) {
+                    borderColor = colorWarning;  // ČERVENÁ pri blikaní
+                }
+                dc.setColor(borderColor, Graphics.COLOR_WHITE);
+                dc.drawRectangle(x, y, barWidth, barHeight);
+            }
         }
         
-        // Show battery level if available
-        debugY += TEXT_HEIGHT + 2;
-        dc.drawText(width/2, debugY, Graphics.FONT_TINY, "Batt: N/A", Graphics.TEXT_JUSTIFY_CENTER);
+        // ----- KRESLENIE PREDNÝCH PREVODNÍKOV -----
+        // Úloha: 2 bary na vrchu, nad 2 najmenšími zadnými (vpravo)
+        
+        if (frontGearMax > 0 && frontGearIndex != null) {
+            
+            // Pozícia: 2 najmenšie zadné sú na pozícii (rearGearMax - 2)
+            var smallestRearStartX = MARGIN_SIDES + (rearGearMax - 2) * rearBarWidth;
+            
+            var FRONT_BAR_WIDTH = rearBarWidth;
+            var frontStartX = smallestRearStartX;
+            
+            var frontTopY = MARGIN_TOP;
+            
+            for (var f = 0; f < frontGearMax; f++) {
+                
+                // ----- VÝŠKA BARU -----
+                // Index 0 (vľavo) = FRONT_HEIGHT_SMALL = 20px
+                // Index 1 (vpravo) = FRONT_HEIGHT_LARGE = 30px
+                var barHeight = (f == 1) ? FRONT_HEIGHT_LARGE : FRONT_HEIGHT_SMALL;
+                
+                var x = frontStartX + f * FRONT_BAR_WIDTH;
+                var y = frontTopY;
+                
+                // ----- KRESLENIE BARU -----
+                // Prvé: vymaž farbou pozadia
+                dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_WHITE);
+                dc.fillRectangle(x, y, FRONT_BAR_WIDTH, barHeight);
+                
+                // Potom: nakresli bar (vyplnený = aktívny, obrys = neaktívny)
+                if (f + 1 == frontGearIndex) {
+                    // AKTÍVNY bar = VYPLNENÝ
+                    // Pri warning a blik: ČERVENÁ, inak čierna
+                    var selectedColor = colorSelected;
+                    if (warning && blinkState) {
+                        selectedColor = colorWarning;  // ČERVENÁ pri blikaní
+                    }
+                    dc.setColor(selectedColor, Graphics.COLOR_WHITE);
+                    dc.fillRectangle(x, y, FRONT_BAR_WIDTH, barHeight);
+                } else {
+                    // NEAKTÍVNY bar = OBRYS
+                    // Pri warning a blik: ČERVENÁ, inak čierna
+                    var borderColor = colorBorder;
+                    if (warning && blinkState) {
+                        borderColor = colorWarning;  // ČERVENÁ pri blikaní
+                    }
+                    dc.setColor(borderColor, Graphics.COLOR_WHITE);
+                    dc.drawRectangle(x, y, FRONT_BAR_WIDTH, barHeight);
+                }
+            }
+        }
     }
-}
 }
