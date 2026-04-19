@@ -13,8 +13,8 @@ using Toybox.Application;
  * - Predné prevodovky: 2 bary (menší = nižší, väčší = vyšší)
  * 
  * Cross-chain detekcia s farebným bliknutím:
- * - Malý predný (1) + 3 najväčšie zadné (10,11,12) = WARNING
- * - Veľký predný (2) + 4 najmenšie zadné (1,2,3,4) = WARNING
+ * - Veľký predný (1) + 3 najväčšie zadné (10,11,12) = WARNING
+ * - Malý predný (2) + 4 najmenšie zadné (1,2,3,4) = WARNING
  */
 class VisualGearsField extends WatchUi.DataField {
     
