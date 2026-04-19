@@ -141,7 +141,7 @@ class VisualGearsField extends WatchUi.DataField {
     function drawGearInfo(dc) {
         
         // ----- KONŠTANTY POZICIÍ -----
-        var MARGIN_BOTTOM = 1;      // Spodný okraj
+        var MARGIN_BOTTOM = 0;      // Spodný okraj
         var MARGIN_TOP = 2;         // Horný okraj
         var MARGIN_SIDES = 1;       // Bočné okraje
         
